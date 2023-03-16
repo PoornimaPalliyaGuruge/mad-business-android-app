@@ -4,4 +4,9 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="rePW">Re-enter Password</string>
+    <string name="INmgt">Inventory \nManagement</string>
+    <string name="Smgt">Sales \nManagement</string>
+    <string name="Emgt">Expense \nManagement</string>
+    <string name="Cmgt">"Customer \nManagement "</string>
+    <string name="customerMgt">Customer \nManagement</string>
 </resources>
