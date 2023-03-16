@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#xA;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#xA;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#xA;    android:layout_width=&quot;match_parent&quot;&#xA;    android:layout_height=&quot;match_parent&quot;&#xA;    android:background=&quot;@color/app_theam_light&quot;>&#xA;&#xA;    &lt;androidx.constraintlayout.widget.ConstraintLayout&#xA;        android:layout_width=&quot;match_parent&quot;&#xA;        android:layout_height=&quot;match_parent&quot;&#xA;        android:background=&quot;@color/app_theam_light&quot;>&#xA;&#xA;        &lt;TextView&#xA;            android:id=&quot;@+id/tvAddItem&quot;&#xA;            android:layout_width=&quot;306dp&quot;&#xA;            android:layout_height=&quot;56dp&quot;&#xA;            android:background=&quot;@drawable/bkg_inventory&quot;&#xA;            android:fontFamily=&quot;sans-serif-medium&quot;&#xA;            android:text=&quot;@string/tvAddItem&quot;&#xA;            android:textAlignment=&quot;center&quot;&#xA;            android:textColor=&quot;@color/app_theam_light&quot;&#xA;            android:textSize=&quot;34sp&quot;&#xA;            tools:layout_editor_absoluteX=&quot;90dp&quot;&#xA;            tools:layout_editor_absoluteY=&quot;16dp&quot; />&#xA;&#xA;        &lt;com.google.android.material.floatingactionbutton.FloatingActionButton&#xA;            android:id=&quot;@+id/fab_back2&quot;&#xA;            android:layout_width=&quot;wrap_content&quot;&#xA;            android:layout_height=&quot;wrap_content&quot;&#xA;            android:layout_marginStart=&quot;16dp&quot;&#xA;            android:layout_marginTop=&quot;16dp&quot;&#xA;            android:clickable=&quot;true&quot;&#xA;            app:backgroundTint=&quot;@color/app_theam_light&quot;&#xA;            app:layout_constraintStart_toStartOf=&quot;parent&quot;&#xA;            app:layout_constraintTop_toTopOf=&quot;parent&quot;&#xA;            app:srcCompat=&quot;@drawable/baseline_arrow_back_ios_new_24&quot;&#xA;            app:tint=&quot;@color/app_theam&quot; />&#xA;&#xA;        &#xA;&#xA;&lt;!--    &lt;TextView-->&#xA;&lt;!--        android:id=&quot;@+id/tvAddItem&quot;-->&#xA;&lt;!--        android:layout_width=&quot;306dp&quot;-->&#xA;&lt;!--        android:layout_height=&quot;56dp&quot;-->&#xA;&lt;!--        android:background=&quot;@drawable/bkg_inventory&quot;-->&#xA;&lt;!--        android:fontFamily=&quot;sans-serif-medium&quot;-->&#xA;&lt;!--        android:text=&quot;@string/tvAddItem&quot;-->&#xA;&lt;!--        android:textAlignment=&quot;center&quot;-->&#xA;&lt;!--        android:textColor=&quot;@color/app_theam_light&quot;-->&#xA;&lt;!--        android:textSize=&quot;34sp&quot;-->&#xA;&lt;!--        tools:layout_editor_absoluteX=&quot;90dp&quot;-->&#xA;&lt;!--        tools:layout_editor_absoluteY=&quot;16dp&quot; />-->&#xA;&#xA;    &lt;com.google.android.material.floatingactionbutton.FloatingActionButton&#xA;        android:id=&quot;@+id/fab_back4&quot;&#xA;        android:layout_width=&quot;wrap_content&quot;&#xA;        android:layout_height=&quot;wrap_content&quot;&#xA;        android:layout_marginStart=&quot;16dp&quot;&#xA;        android:layout_marginTop=&quot;16dp&quot;&#xA;        android:clickable=&quot;true&quot;&#xA;        app:backgroundTint=&quot;@color/app_theam_light&quot;&#xA;        app:layout_constraintStart_toStartOf=&quot;parent&quot;&#xA;        app:layout_constraintTop_toTopOf=&quot;parent&quot;&#xA;        app:srcCompat=&quot;@drawable/baseline_arrow_back_ios_new_24&quot;&#xA;        app:tint=&quot;@color/app_theam&quot; />&#xA;&#xA;    &lt;EditText&#xA;        android:id=&quot;@+id/edtQuantity&quot;&#xA;        android:layout_width=&quot;225dp&quot;&#xA;        android:layout_height=&quot;45dp&quot;&#xA;        android:ems=&quot;10&quot;&#xA;        android:inputType=&quot;textPersonName&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;622dp&quot; />&#xA;&#xA;    &lt;EditText&#xA;        android:id=&quot;@+id/edtItemName&quot;&#xA;        android:layout_width=&quot;225dp&quot;&#xA;        android:layout_height=&quot;45dp&quot;&#xA;        android:ems=&quot;10&quot;&#xA;        android:inputType=&quot;textPersonName&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;375dp&quot; />&#xA;&#xA;    &lt;EditText&#xA;        android:id=&quot;@+id/edtItemPrice&quot;&#xA;        android:layout_width=&quot;225dp&quot;&#xA;        android:layout_height=&quot;45dp&quot;&#xA;        android:ems=&quot;10&quot;&#xA;        android:inputType=&quot;textPersonName&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;500dp&quot; />&#xA;&#xA;    &lt;Button&#xA;        android:id=&quot;@+id/btnAdditem&quot;&#xA;        android:layout_width=&quot;wrap_content&quot;&#xA;        android:layout_height=&quot;wrap_content&quot;&#xA;        android:text=&quot;@string/btnAdditem&quot;&#xA;        tools:layout_editor_absoluteX=&quot;161dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;681dp&quot; />&#xA;&#xA;    &lt;ImageButton&#xA;        android:id=&quot;@+id/imageButton3&quot;&#xA;        android:layout_width=&quot;223dp&quot;&#xA;        android:layout_height=&quot;210dp&quot;&#xA;        app:srcCompat=&quot;@drawable/add_item_picture&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;92dp&quot; />&#xA;&#xA;    &lt;TextView&#xA;        android:id=&quot;@+id/tvItemName&quot;&#xA;        android:layout_width=&quot;225dp&quot;&#xA;        android:layout_height=&quot;45dp&quot;&#xA;        android:text=&quot;@string/tvItemName&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;313dp&quot; />&#xA;&#xA;    &lt;TextView&#xA;        android:id=&quot;@+id/tvItemPrice&quot;&#xA;        android:layout_width=&quot;225dp&quot;&#xA;        android:layout_height=&quot;45dp&quot;&#xA;        android:text=&quot;@string/tvItemPrice&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;437dp&quot; />&#xA;&#xA;    &lt;TextView&#xA;        android:id=&quot;@+id/tvQuantity&quot;&#xA;        android:layout_width=&quot;225dp&quot;&#xA;        android:layout_height=&quot;45dp&quot;&#xA;        android:text=&quot;@string/tvQuantity&quot;&#xA;        tools:layout_editor_absoluteX=&quot;93dp&quot;&#xA;        tools:layout_editor_absoluteY=&quot;563dp&quot; />&#xA;&lt;/androidx.constraintlayout.widget.ConstraintLayout>" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/tvAddItem2"-->
+<!--        tools:layout_editor_absoluteX="90dp"-->
+<!--        tools:layout_editor_absoluteY="16dp"-->
+<!--        android:layout_width="306dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:background="@drawable/bkg_inventory"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:text="@string/tvAddItem"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/app_theam_light"-->
+<!--        android:textSize="34sp" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab_back3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:clickable="true"-->
+<!--        app:backgroundTint="@color/app_theam_light"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"-->
+<!--        app:tint="@color/app_theam" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_theam_light"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="357dp">
+
+        <TextView
+            android:id="@+id/tvAddItem"
+            android:layout_width="306dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bkg_inventory"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tvAddItem"
+            android:textAlignment="center"
+            android:textColor="@color/app_theam_light"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/fab_back2"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:clickable="true"-->
+        <!--            app:backgroundTint="@color/app_theam_light"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"-->
+        <!--            app:tint="@color/app_theam" />-->
+
+
+        <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/fab_back4"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:clickable="true"-->
+        <!--            app:backgroundTint="@color/app_theam_light"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"-->
+        <!--            app:tint="@color/app_theam" />-->
+
+        <ImageButton
+            android:id="@+id/imgAdd"
+            android:layout_width="283dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/bohemian_bags_purses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddItem"
+            app:srcCompat="@drawable/add_item_picture" />
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tvItemName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/edtItemName"
+            app:layout_constraintTop_toBottomOf="@+id/imgAdd" />
+
+        <EditText
+            android:id="@+id/edtItemName"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_bkg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgAdd" />
+
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="73dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tvItemPrice"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/edtItemPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemName" />
+
+        <EditText
+            android:id="@+id/edtItemPrice"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_bkg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtItemName" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="78dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tvQuantity"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/edtQuantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemPrice" />
+
+        <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_bkg"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtItemPrice" />
+
+        <Button
+            android:id="@+id/btnAdditem"
+            android:layout_width="130dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="141dp"
+            android:backgroundTint="@color/app_theam"
+            android:text="@string/btnAdditem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtQuantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/app_theam_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+        app:tint="@color/app_theam" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/edtQuantity2"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="622dp"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edtItemName2"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="375dp"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edtItemPrice2"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="500dp"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnAdditem2"-->
+<!--        tools:layout_editor_absoluteX="161dp"-->
+<!--        tools:layout_editor_absoluteY="681dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/btnAdditem" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="92dp"-->
+<!--        android:layout_width="223dp"-->
+<!--        android:layout_height="210dp"-->
+<!--        app:srcCompat="@drawable/add_item_picture" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvItemName2"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="313dp"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:text="@string/tvItemName" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvItemPrice2"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="437dp"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:text="@string/tvItemPrice" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvQuantity2"-->
+<!--        tools:layout_editor_absoluteX="93dp"-->
+<!--        tools:layout_editor_absoluteY="563dp"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:text="@string/tvQuantity" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

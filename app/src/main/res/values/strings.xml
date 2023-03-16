@@ -4,4 +4,48 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="rePW">Re-enter Password</string>
+
+    <string name="tvTotalProduct">Total Products</string>
+    <string name="tvStockInHand">Stock In Hand</string>
+    <string name="btnProductList">View all products</string>
+    <string name="tvInventory">Inventory Management</string>
+    <string name="tvStock">Stock in hand</string>
+    <string name="tvTotalStock">100000</string>
+    <string name="btnViewAll">View all Products</string>
+    <string name="tvWlcometext">Welcome Back ,</string>
+    <string name="tvTotalitems">No of items</string>
+    <string name="tvTotalproducts">256</string>
+    <string name="btnAddItems">Add</string>
+    <string name="done">done</string>
+    <string name="tvAddItem">Add Item</string>
+    <string name="btnAdditem">Add</string>
+    <string name="tvItemName">Name</string>
+    <string name="tvItemPrice">Price (Rs.)</string>
+    <string name="tvQuantity">Quantity</string>
+    <string name="tvUpdateProduct">Update Product</string>
+    <string name="btnUpdateProduct">Update</string>
+    <string name="tvProducts">Products</string>
+    <string name="btnUpdateProducts">Update</string>
+    <string name="btnDelete">Delete</string>
+    <string name="edtItemNameUpdate">Handcraft bag</string>
+    <string name="edtItemPriceUpdate">Rs. 1250.00</string>
+    <string name="edtUpdateQuantity">100</string>
+    <string name="tvNoItem">256</string>
+    <string name="tvStockHand">108700.00</string>
+    <string name="edtProfileName">Mr. Saman Perera</string>
+    <string name="tvNoOfItem">259</string>
+    <string name="tvIName">Handcraft Bag</string>
+    <string name="tvIprice">1250.00</string>
+    <string name="tvIquntity">100 pieces</string>
+    <string name="tvIName2">Wood statue</string>
+    <string name="tvIprice2">5300.00</string>
+    <string name="tvIquntity2">25 pieces</string>
+    <string name="tvIName3">Pots</string>
+    <string name="tvIprice3">350.00</string>
+    <string name="tvIquntity3">14 pieces</string>
+    <string name="imgProductView2">Woodcraft</string>
+    <string name="imgProductView">Handmade bag</string>
+    <string name="imgProductView4">Pots</string>
+
+
 </resources>
