@@ -15,6 +15,8 @@
     <string name="transport">Transportation</string>
     <string name="addnewExpense">Add New Expense</string>
     <string name="submit">Submit</string>
+    <string name="exp_update">Update</string>
+    <string name="exp_delete">Delete</string>
 
     <string-array name="expense_cat">
         <item></item>
