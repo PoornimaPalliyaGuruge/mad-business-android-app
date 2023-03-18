@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theam">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/tvProUpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nick Fernandez"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="405dp"
+        android:layout_height="634dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/white_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/etdProUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/edit_text_bkg"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/app_theam"
+            android:ems="10"
+            android:hint="@string/emailOrUN"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="nickfernandez@gmail.com"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtProUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/edit_text_bkg"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/app_theam"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="NickFdez29"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etdProUpEmail" />
+
+        <EditText
+            android:id="@+id/edtProUpMobile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/edit_text_bkg"
+            android:drawableLeft="@android:drawable/stat_sys_phone_call"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/app_theam"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="+94 71 568 9128"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtProUpPassword" />
+
+        <EditText
+            android:id="@+id/edtProUpTel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/edit_text_bkg"
+            android:drawableLeft="@android:drawable/stat_sys_phone_call"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/app_theam"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="045 360 22 26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtProUpMobile" />
+
+        <EditText
+            android:id="@+id/edtProAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="27dp"
+            android:background="@drawable/edit_text_bkg"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/app_theam"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPersonName"
+            android:padding="8dp"
+            android:text="474A, Colombo 11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtProUpTel" />
+
+        <Button
+            android:id="@+id/btnProUpdate"
+            android:layout_width="187dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/app_theam"
+            android:text="Update"
+            app:cornerRadius="@dimen/signin_conner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtProAddress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

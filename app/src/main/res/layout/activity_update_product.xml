@@ -12,8 +12,8 @@
         android:id="@+id/edtUpdateQuantity"
         android:layout_width="278dp"
         android:layout_height="48dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
         android:background="@drawable/edit_text_bkg"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -26,26 +26,43 @@
         app:layout_constraintTop_toBottomOf="@+id/edtItemPriceUpdate" />
 
     <TextView
-        android:id="@+id/tvItemNameupdate"
-        android:layout_width="67dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="25dp"
+        android:id="@+id/tvQuantityUpdate"
+        android:layout_width="91dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="@string/tvItemName"
+        android:text="@string/tvQuantity"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/edtItemNameUpdate"
+        app:layout_constraintEnd_toStartOf="@+id/edtUpdateQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemPriceUpdate" />
+
+    <EditText
+        android:id="@+id/edtItemNameUpdate"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/edit_text_bkg"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/edtItemNameUpdate"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgUpdate" />
 
     <TextView
         android:id="@+id/tvItemPriceUpdate"
         android:layout_width="73dp"
         android:layout_height="42dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
@@ -59,8 +76,8 @@
         android:id="@+id/edtItemPriceUpdate"
         android:layout_width="278dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
         android:background="@drawable/edit_text_bkg"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
@@ -72,50 +89,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtItemNameUpdate" />
 
-    <EditText
-        android:id="@+id/edtItemNameUpdate"
-        android:layout_width="278dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/edit_text_bkg"
-        android:ems="10"
-        android:fontFamily="sans-serif-medium"
-        android:inputType="textPersonName"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="@string/edtItemNameUpdate"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgUpdate" />
-
     <TextView
-        android:id="@+id/tvQuantityUpdate"
-        android:layout_width="91dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="12dp"
+        android:id="@+id/tvItemNameupdate"
+        android:layout_width="67dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="sans-serif-medium"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="@string/tvQuantity"
+        android:text="@string/tvItemName"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/edtUpdateQuantity"
-        app:layout_constraintTop_toBottomOf="@+id/tvItemPriceUpdate" />
+        app:layout_constraintEnd_toStartOf="@+id/edtItemNameUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/imgUpdate" />
 
     <Button
         android:id="@+id/btnUpdateProduct"
         android:layout_width="130dp"
         android:layout_height="49dp"
         android:layout_marginStart="131dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="141dp"
         android:backgroundTint="@color/app_theam"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="@string/btnUpdateProduct"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtUpdateQuantity" />
 
@@ -125,6 +126,7 @@
         android:layout_height="209dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="23dp"
+        android:contentDescription="@string/imgUpdate"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +146,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
-        app:tint="@color/app_theam" />
+        app:tint="@color/app_theam"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tvUpdateProduct"

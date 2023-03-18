@@ -46,6 +46,22 @@
     <string name="imgProductView2">Woodcraft</string>
     <string name="imgProductView">Handmade bag</string>
     <string name="imgProductView4">Pots</string>
+    <string name="tvProPassword">"Password : "</string>
+    <string name="edtProPassword">Edward2001</string>
+    <string name="tvProName">Nick Edward</string>
+    <string name="tvProEmail">nickedward@gmail.com</string>
+    <string name="edtProMobile">Mobile</string>
+    <string name="edtProTel">Telephone</string>
+    <string name="edtProAddress">Address</string>
+    <string name="btnProUpdate4">Save</string>
+    <string name="tvProUpName">Nick Fernandez</string>
+    <string name="etdProUpEmail">nickfernandez@gmail.com</string>
+    <string name="edtProUpPassword">NickFdez29</string>
+    <string name="edtProUpMobile">+94 715668 128</string>
+    <string name="edtProUpTel">0453602226</string>
+    <string name="edtProUpdateAddress">474A, Colombo 11</string>
+    <string name="tvName2">Wood stature</string>
+    <string name="imgUpdate">update Pic</string>
 
 
 </resources>
