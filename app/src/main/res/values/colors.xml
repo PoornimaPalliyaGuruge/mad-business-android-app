@@ -27,6 +27,10 @@
     <color name="minimum_clr">#D94CF1</color>
     <color name="average_clr">#FFC107</color>
     <color name="analyze_clr">#FF5722</color>
+    <color name="notification_clr">#8BC34A</color>
+    <color name="notification_color">#AFABAB</color>
+    <color name="top_card">#37386e</color>
+    <color name="nav_tab1">#9695ce</color>
 
 
 </resources>

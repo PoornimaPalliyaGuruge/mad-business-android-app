@@ -30,4 +30,6 @@
     <string name="txt_average">Average Rating</string>
     <string name="txt_maximum">Maximum Rating</string>
     <string name="txt_minimum">Minimum Rating</string>
+    <string name="txt_notification">Notification</string>
+    <string name="notification_message">Notification Message</string>
 </resources>
