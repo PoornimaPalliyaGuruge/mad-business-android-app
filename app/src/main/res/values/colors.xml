@@ -21,6 +21,12 @@
     <color name="inventory">#4ED1C1</color>
     <color name="sMgt">#F0657A</color>
     <color name="expense">#ffca70</color>
+    <color name="sales_topmainS">#5e4edd</color>
+    <color name="sales_topmainE">#974ebd</color>
+    <color name="topButton">#20ffffff</color>
+    <color name="top_card">#37386e</color>
+    <color name="nav_tab1">#9695ce</color>
+    <color name="view_sales">#150043</color>
 
 
 </resources>
