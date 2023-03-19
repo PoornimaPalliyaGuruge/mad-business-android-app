@@ -8,28 +8,25 @@
 
     <ImageView
         android:id="@+id/black_bg"
-        android:layout_width="379dp"
+        android:layout_width="375dp"
         android:layout_height="154dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backbtn"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/black_rounded_bg" />
 
     <ImageView
         android:id="@+id/blue_bg"
-        android:layout_width="379dp"
-        android:layout_height="111dp"
+        android:layout_width="375dp"
+        android:layout_height="109dp"
         android:layout_marginStart="17dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backbtn"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/blue_rounded_bg" />
 
     <TextView
@@ -47,22 +44,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/totExpense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-350dp"
-        android:layout_marginTop="76dp"
-        android:text="Rs. 12,456.00"
-        android:textAlignment="center"
-        android:textColor="@color/app_theam_light"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/black_bg"
-        app:layout_constraintStart_toEndOf="@+id/black_bg"
-        app:layout_constraintTop_toBottomOf="@id/backbtn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
         android:id="@+id/month"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,10 +56,24 @@
         app:layout_constraintStart_toEndOf="@id/this_month_spending" />
 
     <TextView
+        android:id="@+id/totExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Rs. 12,456.00"
+        android:textAlignment="center"
+        android:textColor="@color/app_theam_light"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/blue_bg"
+        app:layout_constraintTop_toTopOf="@+id/blue_bg" />
+
+    <TextView
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
         android:text="@string/date"
         android:textColor="@color/app_theam_light"
@@ -102,7 +97,7 @@
         android:layout_width="68dp"
         android:layout_height="74dp"
         android:layout_marginStart="-240dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/blue_bg"
         app:srcCompat="@drawable/add_new" />
@@ -111,7 +106,7 @@
         android:id="@+id/statitics"
         android:layout_width="41dp"
         android:layout_height="44dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/blue_bg"
@@ -121,12 +116,11 @@
         android:id="@+id/viewHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="13dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/history"
         android:textColor="@color/app_theam_light"
-        app:layout_constraintBottom_toTopOf="@+id/history"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/blue_bg" />
 
@@ -134,7 +128,7 @@
         android:id="@+id/viewStats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="48dp"
         android:text="@string/Statitics"
         android:textColor="@color/app_theam_light"
@@ -146,11 +140,8 @@
         android:id="@+id/history"
         android:layout_width="51dp"
         android:layout_height="41dp"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="280dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/blue_bg"
         app:srcCompat="@drawable/blue_clock" />
@@ -159,8 +150,8 @@
         android:id="@+id/notify_bell"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_marginStart="324dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/backbtn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notfy" />
@@ -172,42 +163,39 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="33dp"
         android:layout_marginEnd="245dp"
-        android:layout_marginBottom="34dp"
         android:text="Expenses"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView23"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/black_bg" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="388dp"
-        android:layout_height="85dp"
+        android:layout_width="367dp"
+        android:layout_height="88dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="272dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/edit_text_bkg" />
+        app:srcCompat="@drawable/edit_text_bkg"
+        tools:layout_editor_absoluteY="359dp" />
 
     <ImageView
         android:id="@+id/imageView33"
-        android:layout_width="388dp"
-        android:layout_height="85dp"
+        android:layout_width="367dp"
+        android:layout_height="82dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="156dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/edit_text_bkg" />
+        app:srcCompat="@drawable/edit_text_bkg"
+        tools:layout_editor_absoluteY="466dp" />
 
     <ImageView
         android:id="@+id/imageView34"
-        android:layout_width="388dp"
-        android:layout_height="85dp"
+        android:layout_width="367dp"
+        android:layout_height="91dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/edit_text_bkg" />
@@ -216,190 +204,177 @@
         android:id="@+id/imageView24"
         android:layout_width="49dp"
         android:layout_height="42dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="296dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
         app:srcCompat="@drawable/elec_bill" />
 
     <TextView
         android:id="@+id/elec_bill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="15dp"
         android:text="@string/electricty"
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toTopOf="@+id/imageView23" />
 
     <TextView
         android:id="@+id/water_bill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginBottom="92dp"
         android:text="@string/waterBill"
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="593dp" />
 
     <TextView
         android:id="@+id/transport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
         android:text="@string/transport"
         android:textColor="@color/black"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageView32"
+        app:layout_constraintTop_toTopOf="@+id/imageView33" />
 
     <TextView
         android:id="@+id/expense_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginStart="44dp"
         android:text="2023/02/25"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/elec_amnt" />
 
     <TextView
         android:id="@+id/expense_date7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
         android:text="2023/02/25"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+        app:layout_constraintStart_toEndOf="@+id/imageView32" />
 
     <TextView
         android:id="@+id/expense_date8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginBottom="52dp"
         android:text="2023/02/25"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="639dp" />
 
     <Button
         android:id="@+id/viewMore"
         android:layout_width="113dp"
         android:layout_height="59dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
         android:backgroundTint="@color/app_theam"
+        android:shadowColor="@color/app_text_border"
         android:text="@string/viewMore"
         android:textColor="@color/app_theam_light"
         android:textSize="17dp"
         app:cornerRadius="15sp"
         app:iconTint="@color/app_theam"
-        app:layout_constraintBottom_toTopOf="@id/viewMore6"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/imageView23"
         app:strokeColor="@color/app_theam_light" />
 
     <Button
         android:id="@+id/viewMore6"
         android:layout_width="113dp"
         android:layout_height="59dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/app_theam"
         android:text="@string/viewMore"
         android:textColor="@color/app_theam_light"
         android:textSize="17dp"
         app:cornerRadius="15sp"
         app:iconTint="@color/app_theam"
-        app:layout_constraintBottom_toTopOf="@id/imageView34"
-        app:layout_constraintStart_toEndOf="@id/elec_amnt4"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+        app:layout_constraintEnd_toEndOf="@+id/imageView33"
         app:strokeColor="@color/app_theam_light" />
 
     <Button
         android:id="@+id/viewMore7"
         android:layout_width="113dp"
         android:layout_height="59dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="56dp"
         android:backgroundTint="@color/app_theam"
         android:text="@string/viewMore"
         android:textColor="@color/app_theam_light"
         android:textSize="17dp"
         app:cornerRadius="15sp"
         app:iconTint="@color/app_theam"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/viewMore6"
-        app:layout_constraintVertical_bias="0.75"
-        app:strokeColor="@color/app_theam_light" />
+        app:strokeColor="@color/app_theam_light"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="588dp" />
 
     <ImageView
         android:id="@+id/imageView30"
         android:layout_width="42dp"
         android:layout_height="44dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView34"
+        app:layout_constraintStart_toStartOf="@+id/imageView34"
         app:srcCompat="@drawable/water_bill" />
 
     <ImageView
         android:id="@+id/imageView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="172dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+        app:layout_constraintStart_toStartOf="@+id/imageView33"
         app:srcCompat="@drawable/trcuk" />
 
     <TextView
         android:id="@+id/elec_amnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginStart="44dp"
         android:text="Rs. 4555.00"
         android:textColor="@color/black"
         android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/elec_bill" />
 
     <TextView
         android:id="@+id/elec_amnt5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginBottom="68dp"
         android:text="Rs. 4555.00"
         android:textColor="@color/black"
         android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="616dp" />
 
     <TextView
         android:id="@+id/elec_amnt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="180dp"
+        android:layout_marginStart="48dp"
         android:text="Rs. 4555.00"
         android:textColor="@color/black"
         android:textSize="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/expense_date7"
+        app:layout_constraintStart_toEndOf="@+id/imageView32" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

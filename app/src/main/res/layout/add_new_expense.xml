@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="410dp"
-        android:layout_height="371dp"
+        android:layout_width="392dp"
+        android:layout_height="368dp"
         android:layout_marginTop="-50dp"
         android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -117,13 +117,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/white_rounded_bg"
+            android:background="@drawable/edit_text_bkg"
             android:ems="10"
             android:hint="Enter the name"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textColor="@color/edit_text_background"
-            android:textColorHint="@color/app_theam_light" />
+            android:textColor="@color/blue_light"
+            android:textColorHint="@color/blue_light" />
 
         <TextView
             android:id="@+id/label1"
@@ -142,13 +142,13 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/white_rounded_bg"
+            android:background="@drawable/edit_text_bkg"
             android:ems="10"
             android:hint="Enter the date"
             android:inputType="date"
             android:textAlignment="center"
-            android:textColor="@color/edit_text_background"
-            android:textColorHint="@color/app_theam_light" />
+            android:textColor="@color/blue_light"
+            android:textColorHint="@color/blue_light" />
 
         <TextView
             android:id="@+id/label2"
@@ -167,7 +167,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/white_rounded_bg"
+            android:background="@drawable/edit_text_bkg"
             android:entries="@array/expense_cat"
             android:popupBackground="@drawable/edit_text_bkg"
             android:spinnerMode="dropdown" />
