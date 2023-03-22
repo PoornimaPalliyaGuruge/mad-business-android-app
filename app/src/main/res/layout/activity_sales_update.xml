@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700">
+    android:background="@color/app_theam">
 
     <ScrollView
         android:layout_width="404dp"
@@ -214,9 +214,9 @@
         android:textColor="@color/white"
         android:textSize="53dp"
         android:textStyle="bold"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="35dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="35dp" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/appBar4"
@@ -225,8 +225,8 @@
         android:layout_gravity="bottom"
         android:backgroundTint="@color/top_card"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="27dp"
-        tools:ignore="BottomAppBar">
+        tools:ignore="BottomAppBar"
+        tools:layout_editor_absoluteX="27dp">
 
         <LinearLayout
             android:layout_width="match_parent"

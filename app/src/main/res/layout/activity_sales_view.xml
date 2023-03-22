@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_700">
+    android:background="@color/app_theam">
 
     <TextView
         android:id="@+id/textView19"
@@ -14,9 +14,9 @@
         android:textColor="@color/white"
         android:textSize="53dp"
         android:textStyle="bold"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="35dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="35dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -188,6 +188,7 @@
                     android:layout_marginEnd="19dp"
                     android:layout_marginBottom="2dp"
                     android:text="Update"
+                    app:cornerRadius="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView29"
@@ -208,10 +209,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="77dp"
                     android:text="Name"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/textView20"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -221,13 +225,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="3dp"
                     android:text="Products"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView13"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView27"
@@ -235,9 +239,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="17dp"
+                    android:layout_marginBottom="29dp"
                     android:text="Total"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView25"
                     tools:ignore="MissingConstraints" />
@@ -246,7 +252,6 @@
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Quantity"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
@@ -261,9 +266,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="17dp"
+                    android:layout_marginBottom="30dp"
                     android:text="3000/="
                     android:textColor="@color/white"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.309"
                     app:layout_constraintStart_toEndOf="@+id/textView27"
@@ -314,7 +321,7 @@
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="14dp"
                     android:text="02"
                     android:textColor="@color/white"
                     android:textStyle="bold"
@@ -322,18 +329,18 @@
                     app:layout_constraintHorizontal_bias="0.224"
                     app:layout_constraintStart_toEndOf="@+id/textView25"
                     app:layout_constraintTop_toBottomOf="@+id/textView24"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="77dp"
                     android:text="Poornima Palliyaguruge"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView13"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
 
@@ -343,7 +350,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="73dp"
                     android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="2dp"
                     android:text="Update"
+                    app:cornerRadius="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView29"
@@ -353,7 +362,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="174dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="16dp"
@@ -364,10 +373,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="77dp"
                     android:text="Name"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/textView20"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -377,7 +389,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="3dp"
                     android:text="Products"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
@@ -391,9 +403,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="17dp"
+                    android:layout_marginBottom="29dp"
                     android:text="Total"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView25"
                     tools:ignore="MissingConstraints" />
@@ -402,7 +416,6 @@
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Quantity"
                     android:textColor="@android:color/holo_orange_light"
                     android:textStyle="bold"
@@ -417,14 +430,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="17dp"
+                    android:layout_marginBottom="30dp"
                     android:text="3000/="
                     android:textColor="@color/white"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.309"
                     app:layout_constraintStart_toEndOf="@+id/textView27"
                     app:layout_constraintTop_toBottomOf="@+id/textView26"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView22"
@@ -437,20 +452,20 @@
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView16"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="15dp"
                     android:text="Earrings"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView22"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView24"
@@ -478,18 +493,18 @@
                     app:layout_constraintHorizontal_bias="0.224"
                     app:layout_constraintStart_toEndOf="@+id/textView25"
                     app:layout_constraintTop_toBottomOf="@+id/textView24"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="77dp"
                     android:text="Poornima Palliyaguruge"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView13"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
 
@@ -499,14 +514,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="73dp"
                     android:layout_marginEnd="19dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="2dp"
                     android:text="Update"
+                    app:cornerRadius="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView29"
                     tools:ignore="MissingConstraints" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
     </ScrollView>
 
@@ -517,8 +534,8 @@
         android:layout_gravity="bottom"
         android:backgroundTint="@color/top_card"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="27dp"
-        tools:ignore="BottomAppBar">
+        tools:ignore="BottomAppBar"
+        tools:layout_editor_absoluteX="27dp">
 
         <LinearLayout
             android:layout_width="match_parent"
