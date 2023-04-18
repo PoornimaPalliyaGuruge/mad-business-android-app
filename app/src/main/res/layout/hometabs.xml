@@ -77,7 +77,7 @@
                         app:srcCompat="@drawable/baseline_inventory_24" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_inventory"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -115,7 +115,7 @@
                         app:srcCompat="@drawable/baseline_point_of_sale_24" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_sales"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -165,7 +165,7 @@
                         app:srcCompat="@drawable/baseline_expense" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_expense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -203,7 +203,7 @@
                         app:srcCompat="@drawable/baseline_customer" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_customer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
