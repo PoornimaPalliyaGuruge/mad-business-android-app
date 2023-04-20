@@ -24,7 +24,7 @@
                 android:background="@drawable/bkg_top_main">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName4"
+                    android:id="@+id/edt_sa_qty"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="16dp"
@@ -43,7 +43,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                    android:id="@+id/edt_sa_total"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="16dp"
@@ -59,10 +59,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_sa_addQty" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/edt_sa_address"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="16dp"
@@ -81,7 +81,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/edt_sa_productName"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="16dp"
@@ -100,7 +100,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/edt_sa_name"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginStart="16dp"
@@ -118,7 +118,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btn_sa_add"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="16dp"
@@ -132,7 +132,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+                    app:layout_constraintTop_toBottomOf="@+id/edt_sa_qty" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -142,10 +142,10 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/button" />
+                    app:layout_constraintTop_toBottomOf="@+id/btn_sa_addQty" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/btn_sa_addQty"
                     android:layout_width="50dp"
                     android:layout_height="51dp"
                     android:layout_marginStart="329dp"
@@ -155,14 +155,14 @@
                     android:text="+"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+                    app:layout_constraintTop_toBottomOf="@+id/edt_sa_productName" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/tv_sa_salesAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sales Add"
@@ -172,122 +172,122 @@
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="35dp" />
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/appBar2"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom"
-        android:backgroundTint="@color/top_card"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="27dp">
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/appBar2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:backgroundTint="@color/top_card"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        tools:layout_editor_absoluteX="27dp">-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:paddingRight="15dp">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingRight="15dp">-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/baseline_home_24" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_sa_product"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_home_24" />-->
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Home"
-                    android:textAlignment="center"
-                    android:textColor="@color/nav_tab1"
-                    android:textSize="12sp" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Home"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/baseline_person_24" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_person_24" />-->
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Profile"
-                    android:textAlignment="center"
-                    android:textColor="@color/nav_tab1"
-                    android:textSize="12sp" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Profile"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/baseline_settings_24" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_settings_24" />-->
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Settings"
-                    android:textAlignment="center"
-                    android:textColor="@color/nav_tab1"
-                    android:textSize="12sp" />
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Settings"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/baseline_notifications_24" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_notifications_24" />-->
 
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Notification"
-                    android:textAlignment="center"
-                    android:textColor="@color/nav_tab1"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </LinearLayout>
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Notification"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
 
 
-    </com.google.android.material.bottomappbar.BottomAppBar>
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
