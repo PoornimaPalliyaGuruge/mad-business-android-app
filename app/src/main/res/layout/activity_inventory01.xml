@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="5dp"
+    android:paddingTop="10dp"
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="46dp">
+
+    <TextView
+        android:id="@+id/tvInventory"
+        android:layout_width="403dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="594dp"
+        android:paddingTop="10dp"
+        android:text="@string/tvInventoryMgt"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtProfileName" />
+
+    <TextView
+        android:id="@+id/tvWlcometext"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:paddingTop="10dp"
+        android:text="@string/tvWlcometext"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtProfileName"
+        android:layout_width="243dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingTop="10dp"
+        android:text="@string/edtProfileName"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWlcometext" />
+
+    <TextView
+        android:id="@+id/tvTotalStock"
+        android:layout_width="151dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bkg_inventory"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalproducts"
+        app:layout_constraintTop_toBottomOf="@+id/tvStock"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvTotalitems"
+        android:layout_width="151dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:paddingTop="10dp"
+        android:text="@string/tvTotalitems"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalproducts"
+        app:layout_constraintTop_toBottomOf="@+id/tvInventory" />
+
+    <TextView
+        android:id="@+id/tvStock"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="60dp"
+        android:paddingTop="10dp"
+        android:text="@string/tvStock"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalStock"
+        app:layout_constraintTop_toBottomOf="@+id/tvInventory" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="226dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/app_theam"
+        android:paddingTop="10dp"
+        android:text="@string/btnViewAll"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddItems"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddItems" />
+
+    <Button
+        android:id="@+id/btnAddItems"
+        android:layout_width="226dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/app_theam"
+        android:paddingTop="10dp"
+        android:text="@string/btnAddItems"
+        android:textColor="#263238"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalproducts"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalStock" />
+
+    <TextView
+        android:id="@+id/tvTotalproducts"
+        android:layout_width="151dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bkg_inventory"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalitems"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/tvNoItem"
+        android:layout_width="137dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="10dp"
+        android:text="@string/tvNoItem"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalproducts"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalproducts"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalproducts"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalproducts" />
+
+    <TextView
+        android:id="@+id/tvStockHand"
+        android:layout_width="137dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/tvStockHand"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTotalStock"
+        app:layout_constraintEnd_toEndOf="@+id/tvTotalStock"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalStock"
+        app:layout_constraintTop_toTopOf="@+id/tvTotalStock" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvInventory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/tvWlcometext"
+        app:layout_constraintTop_toTopOf="@+id/tvWlcometext"
+        app:layout_constraintVertical_bias="0.0"/>
+<!--        app:srcCompat="@drawable/profile" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

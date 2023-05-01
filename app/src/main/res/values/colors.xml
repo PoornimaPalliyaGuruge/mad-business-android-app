@@ -17,6 +17,13 @@
     <color name="app_text_border">#03A9F4</color>
     <color name="edit_text_background">#f6fbff</color>
     <color name="card_clr">#008FCB</color>
+    <color name="cardView">#4ED1C1</color>
 
+<!--    Add item-->
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#D81860</color>
+    <color name="colorAccent">#F48FB1</color>
+    <color name="grey">#bdbdbd</color>
+<!--    <color name="white">#ffffff</color>-->
 
 </resources>
