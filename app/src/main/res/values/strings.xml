@@ -4,4 +4,10 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="rePW">Re-enter Password</string>
+    <string name="edtProfileName">Mr.Saman Perera</string>
+    <string name="tv_welcome">Welcome Back ,</string>
+    <string name="tvTitle">Inventory Management</string>
+    <string name="tvTotalProduct">No of items</string>
+    <string name="tvStockInHand">Stock in hand</string>
+    <string name="btnProductList">View all products</string>
 </resources>
