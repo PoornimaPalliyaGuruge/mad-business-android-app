@@ -102,15 +102,18 @@
                             android:layout_margin="4dp"
                             android:background="@drawable/bkg_top_button">
 
-                            <ImageView
-                                android:id="@+id/img_sh_add"
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/salesAddFab"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/lavender"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/baseline_add_24" />
+                                android:src="@drawable/baseline_add_24w"
+                                android:contentDescription="addSales"
+                                app:tint = "@color/white"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -138,16 +141,18 @@
                             android:layout_margin="4dp"
                             android:background="@drawable/bkg_top_button">
 
-                            <ImageView
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
                                 android:id="@+id/img_sh_view"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/lavender"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/baseline_pageview_24"
-                                tools:ignore="DuplicateIds" />
+                                tools:ignore="DuplicateIds"
+                                app:tint = "@color/white"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -176,16 +181,18 @@
                             android:layout_margin="4dp"
                             android:background="@drawable/bkg_top_button">
 
-                            <ImageView
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
                                 android:id="@+id/img_sh_delete"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/lavender"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/baseline_delete_24"
-                                tools:ignore="DuplicateIds" />
+                                tools:ignore="DuplicateIds"
+                                app:tint = "@color/white"/>
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 

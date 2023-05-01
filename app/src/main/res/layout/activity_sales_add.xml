@@ -1,293 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_theam">
+    android:background="@color/app_theam"
+    tools:context=".AddSalesActivity">
 
-    <ScrollView
-        android:layout_width="404dp"
-        android:layout_height="670dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lavender_border"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:background="@drawable/bkg_top_main">
+                android:layout_height="match_parent"
+                android:text="ADD SALES"
+                android:textSize="32dp"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"/>
 
-                <EditText
-                    android:id="@+id/edt_sa_qty"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="216dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/edit_text_bkg"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theam"
-                    android:ems="10"
-                    android:hint="Quantity"
-                    android:inputType="textPersonName"
-                    android:padding="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
-                <EditText
-                    android:id="@+id/edt_sa_total"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/edit_text_bkg"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theam"
-                    android:ems="10"
-                    android:hint="Total"
-                    android:inputType="textPersonName"
-                    android:padding="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_sa_addQty" />
+            <EditText
+                android:id="@+id/addCusID"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Customer ID"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
 
-                <EditText
-                    android:id="@+id/edt_sa_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="80dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/edit_text_bkg"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theam"
-                    android:ems="10"
-                    android:hint="Address"
-                    android:inputType="textPersonName"
-                    android:padding="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/addProductName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Product Name"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
 
-                <EditText
-                    android:id="@+id/edt_sa_productName"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="148dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/edit_text_bkg"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theam"
-                    android:ems="10"
-                    android:hint="Product Name"
-                    android:inputType="textPersonName"
-                    android:padding="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/addQty"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter quantity"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
+            <EditText
+                android:id="@+id/addTotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:gravity="start|center_vertical"
+                android:hint="Enter Total"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColor="@color/lavender" />
 
-                <EditText
-                    android:id="@+id/edt_sa_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/edit_text_bkg"
-                    android:drawablePadding="8dp"
-                    android:drawableTint="@color/app_theam"
-                    android:ems="10"
-                    android:hint="Name"
-                    android:inputType="textPersonName"
-                    android:padding="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
 
-                <Button
-                    android:id="@+id/btn_sa_add"
-                    android:layout_width="0dp"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="66dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="40dp"
-                    android:backgroundTint="@color/app_theam"
-                    android:text="Add"
-                    app:cornerRadius="26dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/edt_sa_qty" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="25dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_sa_addQty" />
-
-                <Button
-                    android:id="@+id/btn_sa_addQty"
-                    android:layout_width="50dp"
-                    android:layout_height="51dp"
-                    android:layout_marginStart="329dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="25dp"
-                    android:backgroundTint="@color/app_theam"
-                    android:text="+"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/edt_sa_productName" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
-    </ScrollView>
-
-    <TextView
-        android:id="@+id/tv_sa_salesAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sales Add"
-        android:textColor="@color/white"
-        android:textSize="53dp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="35dp" />
-
-<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
-<!--        android:id="@+id/appBar2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        android:backgroundTint="@color/top_card"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        tools:layout_editor_absoluteX="27dp">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:paddingRight="15dp">-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:id="@+id/img_sa_product"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    app:srcCompat="@drawable/baseline_home_24" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView12"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Home"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/nav_tab1"-->
-<!--                    android:textSize="12sp" />-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:id="@+id/imageView10"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    app:srcCompat="@drawable/baseline_person_24" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView12"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Profile"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/nav_tab1"-->
-<!--                    android:textSize="12sp" />-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:id="@+id/imageView10"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    app:srcCompat="@drawable/baseline_settings_24" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView12"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Settings"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/nav_tab1"-->
-<!--                    android:textSize="12sp" />-->
-<!--            </LinearLayout>-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical">-->
-
-<!--                <ImageView-->
-<!--                    android:id="@+id/imageView10"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_margin="4dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    app:srcCompat="@drawable/baseline_notifications_24" />-->
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView12"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:text="Notification"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textColor="@color/nav_tab1"-->
-<!--                    android:textSize="12sp" />-->
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
 
 
-<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>
