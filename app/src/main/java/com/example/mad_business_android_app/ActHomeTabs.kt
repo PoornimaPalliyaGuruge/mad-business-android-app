@@ -20,14 +20,12 @@ class ActHomeTabs: AppCompatActivity() {
         binding = HometabsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.linearLayoutSales.setOnClickListener {
+        binding.btnSaleshome.setOnClickListener {
+            Toast.makeText(this, "Activity started!"+ intent, Toast.LENGTH_SHORT).show()
             val intent = Intent(this, ActSalesHome::class.java)
             startActivity(intent)
+            Toast.makeText(this, "Activity started!"+ intent, Toast.LENGTH_SHORT).show()
         }
-
-
-
-
 
     }
 }

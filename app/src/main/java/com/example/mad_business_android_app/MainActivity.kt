@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hometabs)
+        setContentView(R.layout.activity_sales_add)
 
         FirebaseApp.initializeApp(this);
 
