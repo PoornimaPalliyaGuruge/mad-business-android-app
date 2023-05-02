@@ -42,9 +42,9 @@ android {
 //        viewBinding true
 //    }
 
-    buildFeatures{
-        viewBinding true
-    }
+//    buildFeatures{
+//        viewBinding true
+//    }
 
     configurations.all {
         resolutionStrategy {
@@ -60,13 +60,13 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
-    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
-    implementation 'com.google.firebase:firebase-database-ktx:20.0.4'
+//    implementation 'com.google.firebase:firebase-storage-ktx:20.2.0'
+//    implementation 'com.google.firebase:firebase-database-ktx:20.0.4'
 
     //splash screen gif
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
-    implementation 'com.google.firebase:firebase-auth:21.0.3'
+//    implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
+//    implementation 'com.google.firebase:firebase-auth:21.0.3'
 
 
     testImplementation 'junit:junit:4.13.2'
@@ -74,18 +74,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 
-    implementation 'com.google.firebase:firebase-database:20.2.0'
+//    implementation 'com.google.firebase:firebase-database:20.2.0'
 
-    dependencies {
-        // Import the BoM for the Firebase platform
-        implementation platform('com.google.firebase:firebase-bom:31.5.0')
-
-        // Add the dependency for the Firebase Authentication library
-        // When using the BoM, you don't specify versions in Firebase library dependencies
-        implementation 'com.google.firebase:firebase-auth-ktx'
-
-        // Also add the dependency for the Google Play services library and specify its version
-        implementation 'com.google.android.gms:play-services-auth:20.5.0'
-    }
+//    dependencies {
+//        // Import the BoM for the Firebase platform
+//        implementation platform('com.google.firebase:firebase-bom:31.5.0')
+//
+//        // Add the dependency for the Firebase Authentication library
+//        // When using the BoM, you don't specify versions in Firebase library dependencies
+//        implementation 'com.google.firebase:firebase-auth-ktx'
+//
+//        // Also add the dependency for the Google Play services library and specify its version
+//        implementation 'com.google.android.gms:play-services-auth:20.5.0'
+//    }
 }
 

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-<<<<<<< HEAD
 <solid android:color="@color/white"></solid>
     <corners
         android:topLeftRadius="30dp"
         android:topRightRadius="30dp"></corners>
 
-=======
+
     <solid
         android:color="@color/lavender"></solid>
     <corners
         android:radius="8dp"></corners>
->>>>>>> 8d9c8d502509bda2f6ee4e3b54008bb2bf24503b
 </shape>

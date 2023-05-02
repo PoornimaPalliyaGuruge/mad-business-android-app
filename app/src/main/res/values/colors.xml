@@ -17,7 +17,6 @@
     <color name="app_text_border">#03A9F4</color>
     <color name="edit_text_background">#f6fbff</color>
     <color name="card_clr">#008FCB</color>
-<<<<<<< HEAD
     <color name="customer_card">#FF50AFEA</color>
     <color name="create_button">#46BE53</color>
     <color name="bttn_search_clr">#B9B5B4</color>
@@ -32,12 +31,11 @@
     <color name="notification_color">#AFABAB</color>
     <color name="top_card">#37386e</color>
     <color name="nav_tab1">#9695ce</color>
-=======
+
     <color name="cardV1">#0E74C3</color>
     <color name="inventory">#4ED1C1</color>
     <color name="sMgt">#F0657A</color>
     <color name="expense">#ffca70</color>
->>>>>>> 8d9c8d502509bda2f6ee4e3b54008bb2bf24503b
 
 
 </resources>
