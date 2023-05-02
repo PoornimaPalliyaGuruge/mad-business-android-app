@@ -4,6 +4,7 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="rePW">Re-enter Password</string>
+<<<<<<< HEAD
     <string name="btn_search_txt">CREATE</string>
     <string name="btn_back">back</string>
     <string name="txt_user_management">User Management</string>
@@ -32,4 +33,11 @@
     <string name="txt_minimum">Minimum Rating</string>
     <string name="txt_notification">Notification</string>
     <string name="notification_message">Notification Message</string>
+=======
+    <string name="INmgt">Inventory \nManagement</string>
+    <string name="Smgt">Sales \nManagement</string>
+    <string name="Emgt">Expense \nManagement</string>
+    <string name="Cmgt">"Customer \nManagement "</string>
+    <string name="customerMgt">Customer \nManagement</string>
+>>>>>>> 8d9c8d502509bda2f6ee4e3b54008bb2bf24503b
 </resources>
