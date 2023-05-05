@@ -1,227 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_theam">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActSalesView">
+
 
     <TextView
         android:id="@+id/tv_sv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
         android:text="Sales View"
-        android:textColor="@color/white"
+        android:textColor="@color/lavender"
         android:textSize="53dp"
+
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="35dp" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/search"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search.."
+        android:focusable="false"
+        android:background="@drawable/lavender_border"
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:searchIcon="@drawable/baseline_search_24"
+        android:layout_below="@id/tv_sv_title"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:id="@+id/recycleSalesView"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/search"
+        />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="80dp"
-            android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bkg_view_holder"/>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="198dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bkg_view_holder">
-
-                <TextView
-                    android:id="@+id/tv_sv_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="77dp"
-                    android:text="Name"
-                    android:textColor="@android:color/holo_orange_light"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sv_pName"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tv_sv_product"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginEnd="288dp"
-                    android:text="Products"
-                    android:textColor="@android:color/holo_orange_light"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_name" />
-
-                <TextView
-                    android:id="@+id/tv_sv_total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginEnd="80dp"
-                    android:layout_marginBottom="48dp"
-                    android:text="Total"
-                    android:textColor="@android:color/holo_orange_light"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sv_totval"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_p2" />
-
-                <TextView
-                    android:id="@+id/tv_sv_qty"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="59dp"
-                    android:layout_marginEnd="175dp"
-                    android:text="Quantity"
-
-                    android:textColor="@android:color/holo_orange_light"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sv_product"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_pName"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tv_sv_totval"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginEnd="184dp"
-                    android:layout_marginBottom="48dp"
-                    android:text="3000/="
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_p1qty"
-                    app:layout_constraintVertical_bias="0.09"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tv_sv_p1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="105dp"
-                    android:text="Bag"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sv_qtyval"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_product"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tv_sv_p2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="76dp"
-                    android:text="Earrings"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/tv_sv_p1qty"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_p1"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tv_sv_p1qty"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="200dp"
-                    android:text="01"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_qtyval"
-                    tools:ignore="DuplicateIds,MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tv_sv_pName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="77dp"
-                    android:text="Poornima Palliyaguruge"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints" />
-
-                <Button
-                    android:id="@+id/btn_sv_update"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="72dp"
-                    android:layout_marginEnd="19dp"
-                    android:layout_marginBottom="2dp"
-                    android:text="Update"
-                    app:cornerRadius="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tv_sv_totval"
-                    tools:ignore="MissingConstraints" />
-
-                <TextView
-                    android:id="@+id/tv_sv_qtyval"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="200dp"
-                    android:text="02"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_sv_qty"
-                    tools:ignore="MissingConstraints" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bkg_view_holder"/>
-
-        </LinearLayout>
-    </ScrollView>
+</RelativeLayout>
 
 <!--    <com.google.android.material.bottomappbar.BottomAppBar-->
 <!--        android:id="@+id/appBar5"-->
@@ -351,4 +178,3 @@
 
 <!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
