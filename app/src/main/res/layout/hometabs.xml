@@ -7,33 +7,76 @@
     android:background="@color/app_theam">
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bkg_top_main"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="3dp">
+
+        <ImageView
+            android:id="@+id/img_home_person"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_bkg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.491"
+            app:srcCompat="@drawable/young_man_png_image" />
+
+        <TextView
+            android:id="@+id/tv_home_greet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Pitter"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toEndOf="@+id/img_home_person"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/img_home_bkgPic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="336dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout_home"
+        app:layout_constraintStart_toStartOf="@+id/tv_home_dashboard"
         app:srcCompat="@drawable/astronaut"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="-47dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_home_dashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="My Dashboard"
+        android:text="Dashboard"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="36dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout_home"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="158dp" />
+        tools:layout_editor_absoluteX="3dp" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_marginBottom="24dp"
+        android:id="@+id/linearLayout_home"
+        android:layout_width="387dp"
+        android:layout_height="456dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/bkg_menu"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,7 +120,7 @@
                         app:srcCompat="@drawable/baseline_inventory_24" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_inventory"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -96,6 +139,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/linearLayoutSales"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
                     android:layout_marginLeft="10dp"
@@ -104,7 +148,8 @@
                     android:background="@drawable/bkg_sales"
                     android:orientation="vertical"
                     android:paddingLeft="10dp"
-                    android:paddingRight="10dp">
+                    android:paddingRight="10dp"
+                    >
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -114,15 +159,16 @@
                         android:layout_marginBottom="18dp"
                         app:srcCompat="@drawable/baseline_point_of_sale_24" />
 
-                    <TextView
-                        android:id="@+id/textView6"
+                    <Button
+                        android:id="@+id/btn_saleshome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
+                        android:backgroundTint="@color/sMgt"
                         android:text="@string/Smgt"
+                        android:textAlignment="textStart"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
-                        tools:ignore="DuplicateIds" />
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -165,7 +211,7 @@
                         app:srcCompat="@drawable/baseline_expense" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_expense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -203,7 +249,7 @@
                         app:srcCompat="@drawable/baseline_customer" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/tv_customer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -219,5 +265,126 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
+
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/appBar3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:backgroundTint="@color/top_card"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        tools:layout_editor_absoluteX="27dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingRight="15dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_home_24" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Home"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_person_24" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Profile"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_settings_24" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Settings"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_notifications_24" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Notification"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
