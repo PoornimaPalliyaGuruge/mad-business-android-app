@@ -28,7 +28,7 @@
             android:backgroundTint="@color/app_theam">
 
             <EditText
-                android:id="@+id/userUpdateAge"
+                android:id="@+id/userCreateAge"
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
@@ -37,10 +37,10 @@
                 android:hint="@string/ptxt"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateAddress" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateAddress" />
 
             <EditText
-                android:id="@+id/userUpdateName"
+                android:id="@+id/userCreateName"
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
@@ -76,7 +76,7 @@
                 app:srcCompat="@drawable/customer" />
 
             <EditText
-                android:id="@+id/userUpdateTel"
+                android:id="@+id/userCreateTel"
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
@@ -85,10 +85,10 @@
                 android:hint="@string/ptxt_number"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateAge" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateAge" />
 
             <EditText
-                android:id="@+id/userUpdateAddress"
+                android:id="@+id/userCreateAddress"
                 android:layout_width="374dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
@@ -98,28 +98,28 @@
                 android:inputType="textPostalAddress"
                 android:minHeight="48dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateName" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateName" />
 
             <CheckBox
-                android:id="@+id/userUpdateMale"
+                android:id="@+id/userCreateMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:text="@string/check_box_male"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateTel" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
 
             <CheckBox
-                android:id="@+id/userUpdateFemale"
+                android:id="@+id/userCreateFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="60dp"
                 android:text="@string/check_box_female"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateTel" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
 
             <TextView
-                android:id="@+id/userUpdatePayment"
+                android:id="@+id/userCreatePayment"
                 android:layout_width="374dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="8dp"
@@ -127,16 +127,16 @@
                 android:text="@string/txt_payment"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateTel" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
 
             <Spinner
-                android:id="@+id/userUpdatePaymentSpinner"
+                android:id="@+id/userCreatePaymentSpinner"
                 android:layout_width="374dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
                 android:minHeight="48dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdatePayment"
+                app:layout_constraintTop_toBottomOf="@+id/userCreatePayment"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <CheckBox
@@ -146,10 +146,10 @@
                 android:layout_marginStart="7dp"
                 android:text="@string/check_box_agree"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdatePaymentSpinner" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreatePaymentSpinner" />
 
             <EditText
-                android:id="@+id/userCrtAddresss"
+                android:id="@+id/userCrtEmail"
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
@@ -158,7 +158,7 @@
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userUpdateMale" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateMale" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

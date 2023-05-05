@@ -20,7 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CreateActivity"
+            android:exported="false">
 
+        </activity>
+        <activity android:name=".FetchingActivity"
+            android:exported="false">
+
+        </activity>
     </application>
 
 </manifest>
