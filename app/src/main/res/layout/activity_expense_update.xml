@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Expense Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/update_amount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Expense Amount"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/update_date1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Expense Date"
+        android:inputType="date" />
+
+    <Spinner
+        android:id="@+id/update_cat"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:entries="@array/expense_cat" />
+
+    <Button
+        android:id="@+id/update_edit"
+        android:layout_width="127dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:drawableBottom="@drawable/blue_rounded_bg"
+        android:drawableTint="@color/blue_light"
+        android:text="Update" />
+
+
+</LinearLayout>

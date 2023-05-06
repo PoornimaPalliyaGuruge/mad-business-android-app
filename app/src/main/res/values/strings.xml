@@ -134,6 +134,7 @@
     <string name="txt_average">Average Rating</string>
     <string name="txt_maximum">Maximum Rating</string>
     <string name="txt_minimum">Minimum Rating</string>
+    <string name="expense_id">Expense Id</string>
 
 
 </resources>

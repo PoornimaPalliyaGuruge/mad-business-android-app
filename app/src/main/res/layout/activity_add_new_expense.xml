@@ -2,10 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/lable1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_new_expense">
+    tools:context=".activity.AddNewExpense">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -67,17 +66,17 @@
         app:srcCompat="@drawable/white_circle" />
 
     <EditText
-        android:id="@+id/amount"
+        android:id="@+id/addAmount"
         android:layout_width="214dp"
         android:layout_height="58dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="36dp"
-        android:backgroundTint="@color/app_theam_light"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:hint="Enter the amount(Rs)"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:textColor="@color/edit_text_background"
+        android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:circularflow_radiusInDP="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
@@ -203,8 +202,7 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

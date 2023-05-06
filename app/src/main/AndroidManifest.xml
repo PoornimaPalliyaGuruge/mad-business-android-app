@@ -46,7 +46,17 @@
         <activity
             android:name=".FetchingSalesData"
             android:exported="false" />
+
         <activity android:name=".ActSalesDetails"
+            android:exported="false"/>
+
+        <activity android:name=".activity.ExpenseHome"
+            android:exported="false"/>
+
+        <activity android:name=".activity.AddNewExpense"
+            android:exported="false"/>
+
+        <activity android:name=".activity.OneExpense"
             android:exported="false"/>
 
     </application>
