@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163341933542",
+    "project_id": "mad-business-android-app",
+    "storage_bucket": "mad-business-android-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163341933542:android:a7e0d184ef01ca5b515427",
+        "android_client_info": {
+          "package_name": "com.example.mad_business_android_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163341933542-ndk9oghk9mt4ib6f0agqc6sjkp152hv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcDR1MFwb_KA47iLPRBlg60ThdtLraado"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163341933542-ndk9oghk9mt4ib6f0agqc6sjkp152hv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

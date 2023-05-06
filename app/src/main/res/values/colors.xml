@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--IT21146374 Sales Management , Sign up, Logging , Home-->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,11 +8,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="purple">#4E5DCD</color>
-
     <color name="lavender">#8692f7</color>
-
     <color name="app_theam">#009dff</color>
     <color name="app_theam_light">#f6fbff</color>
     <color name="app_text_border">#03A9F4</color>
@@ -19,5 +17,40 @@
     <color name="card_clr">#008FCB</color>
     <color name="blue_light">#24A6DD</color>
     <color name="grey">#0F403A3A</color>
+    <color name="cardV1">#0E74C3</color>
+    <color name="inventory">#4ED1C1</color>
+    <color name="sMgt">#F0657A</color>
+    <color name="expense">#ffca70</color>
+    <color name="sales_topmainS">#5e4edd</color>
+    <color name="sales_topmainE">#974ebd</color>
+    <color name="topButton">#20ffffff</color>
+    <color name="top_card">#37386e</color>
+    <color name="nav_tab1">#9695ce</color>
+    <color name="view_sales">#150043</color>
+
+    <!--IT21214820  Expense Management -->
+    <color name="blue_light">#24A6DD</color>
+
+    <!--IT21214516 Inventory Management -->
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#D81860</color>
+    <color name="colorAccent">#F48FB1</color>
+    <color name="grey">#bdbdbd</color>
+
+    <!--IT21196188  Customer Management-->
+    <color name="customer_card">#FF50AFEA</color>
+    <color name="create_button">#46BE53</color>
+    <color name="bttn_search_clr">#B9B5B4</color>
+    <color name="btn_delete_clr">#F44336</color>
+    <color name="analyze_button">#FF904FED</color>
+    <color name="existing_clr">#4CAF50</color>
+    <color name="removed_clr">#FA5043</color>
+    <color name="minimum_clr">#D94CF1</color>
+    <color name="average_clr">#FFC107</color>
+    <color name="analyze_clr">#FF5722</color>
+    <color name="divider_grey">#D3D3D3</color>
+
+
+
 
 </resources>
