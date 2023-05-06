@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -37,7 +38,7 @@
         android:layout_marginTop="7dp"
         android:paddingTop="10dp"
         android:text="@string/tvWlcometext"
-        android:textColor="@color/material_dynamic_neutral10"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -62,11 +63,13 @@
         android:layout_height="140dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="44dp"
+        android:layout_marginEnd="21dp"
         android:background="@drawable/bkg_inventory"
         android:paddingTop="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvTotalproducts"
         app:layout_constraintTop_toBottomOf="@+id/tvStock"
         tools:ignore="MissingConstraints" />
@@ -98,25 +101,46 @@
 
     <Button
         android:id="@+id/btnViewAll"
-        android:layout_width="226dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/app_theam"
         android:paddingTop="10dp"
         android:text="@string/btnViewAll"
         app:layout_constraintEnd_toEndOf="@+id/btnAddItems"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAddItems" />
 
     <Button
         android:id="@+id/btnAddItems"
-        android:layout_width="226dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="88dp"
         android:background="@color/app_theam"
         android:paddingTop="10dp"
         android:text="@string/btnAddItems"
         android:textColor="#263238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalproducts"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalStock" />
+
+    <Button
+        android:id="@+id/btneditProduct"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="88dp"
+        android:background="@color/app_theam"
+        android:paddingTop="10dp"
+        android:text="@string/edit_products"
+        android:textColor="#263238"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvTotalproducts"
         app:layout_constraintTop_toBottomOf="@+id/tvTotalStock" />
 
@@ -124,15 +148,18 @@
         android:id="@+id/tvTotalproducts"
         android:layout_width="151dp"
         android:layout_height="140dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
         android:background="@drawable/bkg_inventory"
         android:paddingTop="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTotalStock"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTotalitems"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvNoItem"
@@ -168,18 +195,19 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:layout_height="153dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
         android:paddingTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/tvInventory"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/tvWlcometext"
         app:layout_constraintTop_toTopOf="@+id/tvWlcometext"
-        app:layout_constraintVertical_bias="0.0"/>
-<!--        app:srcCompat="@drawable/profile" />-->
+        app:layout_constraintVertical_bias="0.16"
+        app:srcCompat="@drawable/avatar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
