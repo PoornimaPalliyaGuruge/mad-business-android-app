@@ -15,6 +15,8 @@
     <color name="app_text_border">#03A9F4</color>
     <color name="edit_text_background">#f6fbff</color>
     <color name="card_clr">#008FCB</color>
+    <color name="blue_light">#24A6DD</color>
+    <color name="grey">#0F403A3A</color>
     <color name="cardV1">#0E74C3</color>
     <color name="inventory">#4ED1C1</color>
     <color name="sMgt">#F0657A</color>

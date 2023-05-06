@@ -26,6 +26,8 @@
     <string name="submit">Submit</string>
     <string name="exp_update">Update</string>
     <string name="exp_delete">Delete</string>
+    <string name="Settings">Settings</string>
+    <string name="eidt_pro_set">Edit Profile</string>
 
     <string-array name="expense_cat">
         <item></item>
