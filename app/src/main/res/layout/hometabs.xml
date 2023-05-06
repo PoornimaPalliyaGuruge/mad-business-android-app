@@ -210,15 +210,16 @@
                         android:layout_marginBottom="18dp"
                         app:srcCompat="@drawable/baseline_expense" />
 
-                    <TextView
-                        android:id="@+id/tv_expense"
+                    <Button
+                        android:id="@+id/btn_expense"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
+                        android:backgroundTint="@color/expense"
                         android:text="@string/Emgt"
+                        android:textAlignment="textStart"
                         android:textColor="@color/white"
-                        android:textSize="18sp"
-                        tools:ignore="DuplicateIds" />
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
