@@ -21,7 +21,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="322dp">
+            android:layout_height="548dp">
 
             <Button
                 android:id="@+id/userMgtAnalyzeBtn"
@@ -58,15 +58,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/userMgtSearchView"
                 tools:ignore="MissingConstraints" />
-
+            <ScrollView android:layout_height="wrap_content" android:layout_width="wrap_content">
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/usersRecyclerView"
                 android:layout_width="413dp"
                 android:layout_height="354dp"
-                tools:layout_editor_absoluteX="-1dp"
-                tools:layout_editor_absoluteY="121dp"
+                android:layout_marginTop="115dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userCreateBtn"
                 tools:listitem="@layout/activity_user_card" />
-
+            </ScrollView>
             <TextView
                 android:id="@+id/tvLoadingData"
                 android:layout_width="wrap_content"

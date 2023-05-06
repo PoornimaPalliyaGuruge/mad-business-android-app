@@ -1,6 +1,6 @@
 package com.example.mad_business_android_app
 
-data class UserModel (
+data class RetriveUserModel(
     var userId : String? = null,
     var name : String? = null,
     var address : String? = null,
@@ -10,5 +10,4 @@ data class UserModel (
     var female : String? = null,
     var male : String? = null,
     var payment: String? = null
-
 )

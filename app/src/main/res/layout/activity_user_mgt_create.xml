@@ -51,16 +51,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/userCrtImage" />
 
             <Button
-                android:id="@+id/userCreateBtn"
+                android:id="@+id/userCreateBtnTwo"
                 android:layout_width="163dp"
                 android:layout_height="50dp"
+                android:layout_marginStart="232dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="64dp"
                 android:backgroundTint="@color/create_button"
                 android:text="@string/btn_search_txt"
                 app:cornerRadius="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userCrtAgree"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
@@ -123,11 +124,10 @@
                 android:layout_width="374dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="115dp"
                 android:text="@string/txt_payment"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
+                app:layout_constraintTop_toBottomOf="@+id/userCrtEmail" />
 
             <Spinner
                 android:id="@+id/userCreatePaymentSpinner"
@@ -153,7 +153,6 @@
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
-                android:layout_marginTop="5dp"
                 android:ems="10"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"

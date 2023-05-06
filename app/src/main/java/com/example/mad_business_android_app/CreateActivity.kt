@@ -50,7 +50,7 @@ class CreateActivity : AppCompatActivity() {
         }
 
 
-        btnSave = findViewById(R.id.userCreateBtn)
+        btnSave = findViewById(R.id.userCreateBtnTwo)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Users")
 
@@ -65,11 +65,11 @@ class CreateActivity : AppCompatActivity() {
         //getting values
         val name = cusName.text.toString()
         val address = cusAddress.text.toString()
-        val age = cusAge.text.toString().toInt()
+        val age = cusAge.text.toString()
         val number = cusNumber.text.toString()
         val email = cusEmail.text.toString()
-        val female = cusFemale.isChecked()
-        val male = cusMale.isChecked()
+        val female = cusFemale.isChecked().toString()
+        val male = cusMale.isChecked().toString()
         val payment = cusPayment.getSelectedItem().toString()
 
         if(name.isEmpty()){
@@ -85,8 +85,8 @@ class CreateActivity : AppCompatActivity() {
         dbRef.child(userId).setValue(user)
             .addOnCompleteListener{
                 Toast.makeText(this,"User created successfully", Toast.LENGTH_LONG).show()
-                val intent = Intent(this,FetchingActivity::class.java)
-                startActivity(intent)
+//                val intent = Intent(this,FetchingActivity::class.java)
+//                startActivity(intent)
             }.addOnFailureListener { err ->
                 Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_LONG).show()
             }
