@@ -1,17 +1,57 @@
 <resources>
+    <!--IT21146374 Sales Management , Sign up, Logging , Home-->
     <string name="app_name">mad-business-android-app</string>
     <string name="emailOrUN">Email or Username</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="rePW">Re-enter Password</string>
+    <string name="INmgt">Inventory \nManagement</string>
+    <string name="Smgt">Sales \nManagement</string>
+    <string name="Emgt">Expense \nManagement</string>
+    <string name="Cmgt">"Customer \nManagement "</string>
+    <string name="customerMgt">Customer \nManagement</string>
 
-    <string name="tv_welcome">Welcome Back ,</string>
-    <string name="tvTitle">Inventory Management</string>
-    <string name="tvTotalProduct">No of items</string>
-    <string name="tvStockInHand">Stock in hand</string>
+
+    <!--IT21214820  Expense Management -->
+    <string name="totSpendingView">This month spending</string>
+    <string name="month">March</string>
+    <string name="date">15</string>
+    <string name="history">History</string>
+    <string name="Statitics">Statistics</string>
+    <string name="electricty">Electricty Bill</string>
+    <string name="viewMore">More</string>
+    <string name="waterBill">Water Bill</string>
+    <string name="transport">Transportation</string>
+    <string name="addnewExpense">Add New Expense</string>
+    <string name="submit">Submit</string>
+    <string name="exp_update">Update</string>
+    <string name="exp_delete">Delete</string>
+    <string name="Settings">Settings</string>
+    <string name="eidt_pro_set">Edit Profile</string>
+
+    <string-array name="expense_cat">
+        <item></item>
+        <item>Wages and salaries</item>
+        <item>Electricty bill</item>
+        <item>Water bill</item>
+        <item>Telephone bill</item>
+        <item>Insurance</item>
+        <item>Fuel</item>
+        <item>Transportation</item>
+        <item>Bank charges</item>
+        <item>Loan Interest</item>
+        <item>Repair and maintenance</item>
+        <item>Rent</item>
+        <item>Taxes</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <!--IT21214516 Inventory Management -->
+    <string name="tvTotalProduct">Total Products</string>
+    <string name="tvStockInHand">Stock In Hand</string>
     <string name="btnProductList">View all products</string>
-
-
+    <string name="tvInventory">Inventory Management</string>
     <string name="tvStock">Stock in hand</string>
     <string name="tvTotalStock">100000</string>
     <string name="btnViewAll">View all Products</string>
@@ -65,9 +105,36 @@
     <string name="edtProUpdateAddress">474A, Colombo 11</string>
     <string name="tvName2">Wood stature</string>
     <string name="imgUpdate">update Pic</string>
-    <string name="tvInventoryMgt">Inventory Management</string>
-    <string name="loading_data">Loading Data....</string>
-    <string name="addimage">addImage</string>
-    <string name="edit_products">Edit Products</string>
+
+
+    <!--IT21196188  Customer Management-->
+    <string name="btn_search_txt">CREATE</string>
+    <string name="btn_back">back</string>
+    <string name="txt_user_management">User Management</string>
+    <string name="btn_delete_txt">DELETE</string>
+    <string name="user_name_txt">User Name</string>
+    <string name="btn_analyze_txt">ANALYZE</string>
+    <string name="btn_user_create_txt">Create User</string>
+    <string name="ptxt_name">Name</string>
+    <string name="ptxt_address">Address</string>
+    <string name="ptxt">Age</string>
+    <string name="ptxt_number">Phone Number</string>
+    <string name="check_box_male">Male</string>
+    <string name="check_box_female">Female</string>
+    <string name="txt_payment">Payment Type</string>
+    <string name="check_box_agree">Agree terms and conditions</string>
+    <string name="ptxt_email">Email</string>
+    <string name="txt_update_user">Update User</string>
+    <string name="btn_update_txt">Update</string>
+    <string name="txt_rating">Add Rating</string>
+    <string name="txt_user_analyze">Analyze</string>
+    <string name="txt_existing_user">Existing Users</string>
+    <string name="txt_removed_user">Removed Users</string>
+    <string name="txt_max_rating">Maximum Rating</string>
+    <string name="txt_average">Average Rating</string>
+    <string name="txt_maximum">Maximum Rating</string>
+    <string name="txt_minimum">Minimum Rating</string>
+    <string name="expense_id">Expense Id</string>
+
 
 </resources>

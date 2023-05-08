@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActSalesView">
+
+
+    <TextView
+        android:id="@+id/tv_sv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:text="Sales View"
+        android:textColor="@color/lavender"
+        android:textSize="53dp"
+
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/search"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search.."
+        android:focusable="false"
+        android:background="@drawable/lavender_border"
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:searchIcon="@drawable/baseline_search_24"
+        android:layout_below="@id/tv_sv_title"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleSalesView"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/search"
+        />
+
+
+</RelativeLayout>
+
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/appBar5"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:backgroundTint="@color/top_card"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        tools:ignore="BottomAppBar"-->
+<!--        tools:layout_editor_absoluteX="27dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingRight="15dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_home_24"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Home"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_person_24"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Profile"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_settings_24"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Settings"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="4dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    app:srcCompat="@drawable/baseline_notifications_24"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView12"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Notification"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@color/nav_tab1"-->
+<!--                    android:textSize="12sp"-->
+<!--                    tools:ignore="DuplicateIds" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+

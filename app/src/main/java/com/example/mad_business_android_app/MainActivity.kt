@@ -1,23 +1,47 @@
 package com.example.mad_business_android_app
 
+
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mad_business_android_app.databinding.ActivityInventory01Binding
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.mad_business_android_app.activity.ExpenseHome
+import com.example.mad_business_android_app.databinding.HometabsBinding
+import com.google.firebase.FirebaseApp
+
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityInventory01Binding
-//    private lateinit var dataList: ArrayList<ProductModel>
-//    private lateinit var adapter: MyAdapter
-//    var databaseReference:DatabaseReference? = null
-//    var eventListener:ValueEventListener? = null
+    private lateinit var binding: HometabsBinding
+    private lateinit var expenseBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inventory01)
-        binding = ActivityInventory01Binding.inflate(layoutInflater)
+        binding = HometabsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnSaleshome.setOnClickListener {
+            Toast.makeText(this, "Activity started!"+ intent, Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ActSalesHome::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "Activity started!"+ intent, Toast.LENGTH_SHORT).show()
+        }
+
+        expenseBtn= findViewById(R.id.btn_expense)
+         expenseBtn.setOnClickListener{
+
+            val intent = Intent(this, ExpenseHome::class.java)
+            startActivity(intent)
+
+        }
+
+
+
+
+
+       // FirebaseApp.initializeApp(this);
 
 //        val gridLayoutManager = GridLayoutManager(this@MainActivity, 1)
 
@@ -31,4 +55,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }

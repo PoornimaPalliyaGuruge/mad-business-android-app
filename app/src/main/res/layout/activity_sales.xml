@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theam">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkg_top_main">
+
+                <ImageView
+                    android:id="@+id/img_sh_person"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/edit_text_bkg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/young_man_png_image" />
+
+                <TextView
+                    android:id="@+id/tv_sh_greating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="142dp"
+                    android:text="Hello Pitter"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_sh_person"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_person"
+                    app:layout_constraintTop_toTopOf="@+id/img_sh_person" />
+
+                <TextView
+                    android:id="@+id/tv_sh_totalRev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total revenue"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_sh_person" />
+
+                <TextView
+                    android:id="@+id/tv_sh_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS. 50,000"
+                    android:textColor="@color/white"
+                    android:textSize="53dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_sh_totalRev"
+                    app:layout_constraintStart_toStartOf="@+id/tv_sh_totalRev"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_totalRev" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_total">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/bkg_top_button">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/salesAddFab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/lavender"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:src="@drawable/baseline_add_24w"
+                                android:contentDescription="addSales"
+                                app:tint = "@color/white"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sh_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+
+                            android:textAlignment="center"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/bkg_top_button">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/salesViewFab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/lavender"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/baseline_pageview_24"
+                                tools:ignore="DuplicateIds"
+                                app:tint = "@color/white"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sh_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/bkg_top_button">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/salesUpDelFab"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/lavender"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/baseline_update_24"
+                                tools:ignore="DuplicateIds"
+                                app:tint = "@color/white"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tv_sh_delete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkg_view_holder">
+
+                <TextView
+                    android:id="@+id/tv_sh_product1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="16dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="189dp"
+                    android:text="Crochet Handmade Bag"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_product1"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/img_sh_product1"
+                    android:layout_width="103dp"
+                    android:layout_height="92dp"
+                    android:background="@drawable/edit_text_bkg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.063"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/_15310687_135101965988811_2920287087768947297_n_removebg_preview"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/tv_sh_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="Sales"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_sh_product1"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_product1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_product1"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p1Salestot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="232dp"
+                    android:layout_marginBottom="23dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.941"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_product1"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_sales"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p1Salesrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="108dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Revenue"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/tv_sh_p1rev"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sh_sales"
+                    app:layout_constraintTop_toTopOf="@+id/tv_sh_product1"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p1rev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="RS.20,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.758"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sh_p1Salestot"
+                    app:layout_constraintTop_toTopOf="@+id/tv_sh_p1Salesrev"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkg_view_holder">
+
+                <TextView
+                    android:id="@+id/tv_sh_p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+
+                    android:text="Slippers"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_p2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/img_sh_p2"
+                    android:layout_width="103dp"
+                    android:layout_height="92dp"
+                    android:background="@drawable/edit_text_bkg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.063"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/_05927778_1140535953208794_1323190339882227406_n_removebg_preview"
+                    tools:ignore="DuplicateIds" />
+
+
+                <TextView
+                    android:id="@+id/tv_sh_product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="105dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Sales"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_sh_p2totSales"
+                    app:layout_constraintEnd_toStartOf="@+id/textView16"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_p2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_p2" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Revenue"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.277"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="119dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="RS.20,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.405"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sh_p2totSales"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p2totSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView17"
+                    app:layout_constraintHorizontal_bias="0.118"
+                    app:layout_constraintStart_toEndOf="@+id/img_sh_p2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_product2"
+                    tools:ignore="DuplicateIds" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bkg_view_holder">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="188dp"
+                    android:text="Earrings"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    tools:ignore="DuplicateIds,MissingConstraints"
+                    tools:layout_editor_absoluteY="4dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="103dp"
+                    android:layout_height="92dp"
+                    android:background="@drawable/edit_text_bkg"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.063"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/_91833860_100744696038676_7179804162141650712_n_removebg_preview"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p3sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Sales"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p3_salestot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="232dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="20"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="DuplicateIds" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p3rev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginEnd="84dp"
+                    android:text="Revenue"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    tools:ignore="DuplicateIds,MissingConstraints"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <TextView
+                    android:id="@+id/tv_sh_p3totrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="RS.20,000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sh_p3_salestot"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_sh_p3rev"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--            android:id="@+id/appBar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:backgroundTint="@color/top_card">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:paddingRight="15dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView10"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/baseline_home_24"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView12"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Home"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/nav_tab1"-->
+<!--                        android:textSize="12sp"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView10"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/baseline_person_24"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView12"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Profile"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/nav_tab1"-->
+<!--                        android:textSize="12sp"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView10"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/baseline_settings_24"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView12"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Settings"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/nav_tab1"-->
+<!--                        android:textSize="12sp"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView10"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="4dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        app:srcCompat="@drawable/baseline_notifications_24"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView12"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Notification"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColor="@color/nav_tab1"-->
+<!--                        android:textSize="12sp"-->
+<!--                        tools:ignore="DuplicateIds" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+
+<!--        </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
