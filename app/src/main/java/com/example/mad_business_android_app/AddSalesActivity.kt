@@ -53,7 +53,6 @@ class AddSalesActivity:AppCompatActivity() {
 
         uploadData()
 
-
     }
     private fun uploadData() {
 

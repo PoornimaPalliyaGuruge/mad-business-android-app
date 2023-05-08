@@ -73,7 +73,7 @@
                 android:drawableTint="@color/app_theam"
                 android:ems="10"
                 android:hint="@string/password"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -133,4 +133,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
