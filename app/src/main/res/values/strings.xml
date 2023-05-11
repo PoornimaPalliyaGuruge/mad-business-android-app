@@ -67,6 +67,7 @@
     <string name="tvQuantity">Quantity</string>
     <string name="tvUpdateProduct">Update Product</string>
     <string name="btnUpdateProduct">Update</string>
+    <string name="addimage">addImage</string>
     <string name="tvProducts">Products</string>
     <string name="btnUpdateProducts">Update</string>
     <string name="btnDelete">Delete</string>
@@ -136,6 +137,12 @@
     <string name="txt_minimum">Minimum Rating</string>
     <string name="expense_id">Expense Id</string>
     <string name="chart_Title">Expenses for Each Month</string>
+    <string name="_125000_00">125000.00</string>
+    <string name="edit_products">Edit_products</string>
+    <string name="stock_in_hand_rs">Stock in hand (Rs.)</string>
+    <string name="inventory_management">Inventory Management</string>
+    <string name="update_data">Update data</string>
+    <string name="edit_products2">Edit Products</string>
 
 
 </resources>
