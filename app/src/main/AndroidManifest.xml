@@ -59,6 +59,21 @@
         <activity android:name=".activity.OneExpense"
             android:exported="false"/>
 
+<!--        Inventory-->
+        <activity android:name=".InventoryHome" android:exported="false"/>
+
+        <activity android:name=".InsertionProductActivity" android:exported="false"/>
+        <!--        <activity android:name=".FetchingProductActivity" android:exported="false"/>-->
+
+        <activity android:name=".FetchingProductActivity" android:exported="false">
+        </activity>
+
+        <activity android:name=".ProductDetailsActivity" android:exported="false">
+        </activity>
+
+        <activity android:name=".FetchingAllProductActivity" android:exported="false">
+        </activity>
+        <!--        Inventory-->
     </application>
 
 </manifest>
