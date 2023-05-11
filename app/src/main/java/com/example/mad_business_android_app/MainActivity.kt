@@ -16,6 +16,7 @@ import com.google.firebase.FirebaseApp
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: HometabsBinding
     private lateinit var expenseBtn: Button
+    private lateinit var btnInventory: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +36,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ExpenseHome::class.java)
             startActivity(intent)
 
+        }
+
+        btnInventory = findViewById(R.id.tv_inventory)
+        btnInventory.setOnClickListener {
+            val intent = Intent(this,InventoryHome::class.java)
+            startActivity(intent)
         }
 
 
