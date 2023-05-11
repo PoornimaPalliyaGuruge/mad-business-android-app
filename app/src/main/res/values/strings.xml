@@ -135,6 +135,7 @@
     <string name="txt_maximum">Maximum Rating</string>
     <string name="txt_minimum">Minimum Rating</string>
     <string name="expense_id">Expense Id</string>
+    <string name="chart_Title">Expenses for Each Month</string>
 
 
 </resources>
