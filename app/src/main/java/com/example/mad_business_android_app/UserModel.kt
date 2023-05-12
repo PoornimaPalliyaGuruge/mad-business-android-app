@@ -7,8 +7,7 @@ data class UserModel (
     var age : String? = null,
     var number : String? = null,
     var email : String? = null,
-    var female : String? = null,
-    var male : String? = null,
+    var gender : String? = null,
     var payment: String? = null
 
 )

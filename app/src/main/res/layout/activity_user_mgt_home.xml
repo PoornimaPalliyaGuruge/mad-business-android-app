@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/custom_card_view_style"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_theam"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/userMgtMaincardView"
-        android:layout_width="0dp"
-        android:layout_height="565dp"
+        android:layout_width="match_parent"
+        android:layout_height="551dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="0dp"
+
         android:background="@drawable/bkg_customer"
         app:cardCornerRadius="35dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,77 +22,84 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
         tools:ignore="MissingConstraints">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+        <Button
+            android:id="@+id/userMgtAnalyzeBtn"
+            android:layout_width="163dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:backgroundTint="@color/analyze_button"
+            android:text="@string/btn_analyze_txt"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userMgtSearchView"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/userCreateBtn"
+            android:layout_width="163dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="75dp"
+            android:backgroundTint="@color/create_button"
+            android:text="@string/btn_search_txt"
+            app:cornerRadius="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userMgtSearchView"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usersRecyclerView"
             android:layout_width="match_parent"
-            android:layout_height="548dp">
+            android:layout_height="332dp"
+            android:layout_marginTop="130dp"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/activity_user_card" />
 
-            <Button
-                android:id="@+id/userMgtAnalyzeBtn"
-                android:layout_width="163dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/analyze_button"
-                android:text="@string/btn_analyze_txt"
-                app:cornerRadius="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userMgtSearchView"
-                tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/allUserBtn"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/average_clr"
+            android:text="View All"
+            app:cornerRadius="15dp" />
 
-            <SearchView
-                android:id="@+id/userMgtSearchView"
-                android:layout_width="355dp"
-                android:layout_height="32dp"
-                android:layout_marginTop="24dp"
-                android:background="@color/bttn_search_clr"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/userMgtSearch"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="12dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:layout_marginEnd="12dp"-->
+<!--            android:focusable="false"-->
+<!--            app:iconifiedByDefault="false"-->
+<!--            app:queryHint="Search..."-->
+<!--            app:searchHintIcon="@null">-->
 
-            <Button
-                android:id="@+id/userCreateBtn"
-                android:layout_width="163dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
-                android:backgroundTint="@color/create_button"
-                android:text="@string/btn_search_txt"
-                app:cornerRadius="15dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userMgtSearchView"
-                tools:ignore="MissingConstraints" />
-            <ScrollView android:layout_height="wrap_content" android:layout_width="wrap_content">
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/usersRecyclerView"
-                android:layout_width="413dp"
-                android:layout_height="354dp"
-                android:layout_marginTop="115dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCreateBtn"
-                tools:listitem="@layout/activity_user_card" />
-            </ScrollView>
-            <TextView
-                android:id="@+id/tvLoadingData"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Loading Data....."
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+<!--            <TextView-->
+<!--                android:id="@+id/tvLoadingData"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Loading Data....."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.appcompat.widget.SearchView>-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/userAnalyzeBtn"
+        android:id="@+id/userMgtBackBtn"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -119,12 +129,18 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="394dp"
-        android:layout_height="170dp"
+        android:layout_width="401dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/userAnalyzeTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-31dp"
+        android:layout_marginEnd="10dp"
         android:foregroundGravity="center"
         app:layout_constraintTop_toBottomOf="@+id/userAnalyzeTitle"
         app:srcCompat="@drawable/customers"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="8dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

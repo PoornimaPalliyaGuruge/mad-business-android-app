@@ -6,13 +6,22 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mad_business_android_app.R
-import com.example.mad_business_android_app.RetriveUserModel
+import com.example.mad_business_android_app.UserModel
 
-class UserAdapter(private val userList: ArrayList<RetriveUserModel>) : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
+class UserAdapter(private var userList: ArrayList<UserModel>) : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
+
+    private lateinit var mlistner: onItemClickListener
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(clickListener: onItemClickListener){
+        mlistner = clickListener
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_user_card, parent,false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView,mlistner)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -24,7 +33,19 @@ class UserAdapter(private val userList: ArrayList<RetriveUserModel>) : RecyclerV
         return userList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+//    fun searchDataList(searchList: ArrayList<UserModel>){
+//        userList = searchList
+//        notifyDataSetChanged()
+//    }
+
+    class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
         val tvUserName : TextView = itemView.findViewById(R.id.userCardName)
+
+        init{
+            itemView.setOnClickListener{
+                clickListener.onItemClick(adapterPosition)
+            }
+        }
     }
+
 }

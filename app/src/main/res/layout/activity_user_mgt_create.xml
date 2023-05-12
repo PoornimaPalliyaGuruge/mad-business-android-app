@@ -27,12 +27,21 @@
             android:layout_height="693dp"
             android:backgroundTint="@color/app_theam">
 
+            <TextView
+                android:id="@+id/userCreatePayment3"
+                android:layout_width="116dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:text="  Gender"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/userCreateGenderSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/userCrtEmail" />
+
             <EditText
                 android:id="@+id/userCreateAge"
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
-                android:layout_marginTop="8dp"
                 android:ems="10"
                 android:hint="@string/ptxt"
                 android:inputType="textPersonName"
@@ -81,7 +90,6 @@
                 android:layout_width="374dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="7dp"
-                android:layout_marginTop="8dp"
                 android:ems="10"
                 android:hint="@string/ptxt_number"
                 android:inputType="textPersonName"
@@ -93,7 +101,6 @@
                 android:layout_width="374dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
-                android:layout_marginTop="8dp"
                 android:ems="10"
                 android:hint="@string/ptxt_address"
                 android:inputType="textPostalAddress"
@@ -101,42 +108,35 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/userCreateName" />
 
-            <CheckBox
-                android:id="@+id/userCreateMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                android:text="@string/check_box_male"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
-
-            <CheckBox
-                android:id="@+id/userCreateFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="60dp"
-                android:text="@string/check_box_female"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
-
             <TextView
                 android:id="@+id/userCreatePayment"
-                android:layout_width="374dp"
-                android:layout_height="35dp"
+                android:layout_width="116dp"
+                android:layout_height="44dp"
                 android:layout_marginStart="8dp"
-                android:text="@string/txt_payment"
+                android:layout_marginTop="8dp"
+                android:text="Payment"
                 android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/userCreatePaymentSpinner"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCrtEmail" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreatePayment3" />
 
             <Spinner
                 android:id="@+id/userCreatePaymentSpinner"
-                android:layout_width="374dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
+                android:layout_width="258dp"
+                android:layout_height="48dp"
                 android:minHeight="48dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCreatePayment"
+                app:layout_constraintStart_toEndOf="@+id/userCreatePayment"
+                app:layout_constraintTop_toBottomOf="@+id/userCreateGenderSpinner"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Spinner
+                android:id="@+id/userCreateGenderSpinner"
+                android:layout_width="262dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userCrtEmail"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <CheckBox
@@ -152,19 +152,19 @@
                 android:id="@+id/userCrtEmail"
                 android:layout_width="374dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="7dp"
+                android:layout_marginStart="8dp"
                 android:ems="10"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userCreateMale" />
+                app:layout_constraintTop_toBottomOf="@+id/userCreateTel" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/userAnalyzeBtn"
+        android:id="@+id/userCreateBackBtn"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

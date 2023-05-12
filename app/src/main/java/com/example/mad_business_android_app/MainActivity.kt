@@ -11,15 +11,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_user)
+        setContentView(R.layout.hometabs)
 
-        userbtn = findViewById(R.id.usersbtn)
+        userbtn = findViewById(R.id.userManBtn)
 
         userbtn.setOnClickListener{
             val intent = Intent(this, FetchingActivity::class.java)
             startActivity(intent)
 
         }
+
+
 
 //        userCreateBtn = findViewById(R.id.userCreateBtn)
 //

@@ -23,8 +23,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/mainCardView"
         android:layout_width="0dp"
-        android:layout_height="525dp"
+        android:layout_height="450dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="80dp"
         android:background="@drawable/bkg_customer"
@@ -33,6 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNotificationImage1"
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -41,23 +43,26 @@
             android:backgroundTint="@color/app_theam">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
                 android:layout_width="340dp"
                 android:layout_height="85dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="21dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/notification_color"
                 app:cardCornerRadius="35dp"
                 app:layout_constraintBottom_toTopOf="@+id/cardView5"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/messageIcon1"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginStart="16dp"
@@ -70,14 +75,14 @@
                         app:srcCompat="@drawable/notification" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/notifiTv1"
                         android:layout_width="150dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginBottom="29dp"
                         android:text="@string/notification_message"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView" />
+                        app:layout_constraintStart_toEndOf="@+id/messageIcon1" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
@@ -87,21 +92,21 @@
                 android:layout_width="340dp"
                 android:layout_height="85dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/notification_color"
                 app:cardCornerRadius="35dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView6">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/messageIcon2"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginStart="16dp"
@@ -115,14 +120,14 @@
                         tools:ignore="DuplicateIds" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/notifiTv2"
                         android:layout_width="150dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginBottom="29dp"
                         android:text="@string/notification_message"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView" />
+                        app:layout_constraintStart_toEndOf="@+id/messageIcon2" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
@@ -132,31 +137,31 @@
                 android:layout_width="340dp"
                 android:layout_height="85dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/notification_color"
                 app:cardCornerRadius="35dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/notifiTv4"
                         android:layout_width="150dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginBottom="29dp"
                         android:text="@string/notification_message"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView" />
+                        app:layout_constraintStart_toEndOf="@+id/messageIcon4" />
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/messageIcon4"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginStart="16dp"
@@ -177,32 +182,32 @@
                 android:layout_width="340dp"
                 android:layout_height="85dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/notification_color"
                 app:cardCornerRadius="35dp"
-                app:layout_constraintBottom_toTopOf="@+id/cardView3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView12"
+                        android:id="@+id/notifiTv3"
                         android:layout_width="150dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="28dp"
                         android:layout_marginBottom="29dp"
                         android:text="@string/notification_message"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintStart_toEndOf="@+id/messageIcon3"
                         tools:ignore="DuplicateIds" />
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/messageIcon3"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginStart="16dp"
@@ -218,50 +223,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView2"
-                android:layout_width="340dp"
-                android:layout_height="85dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/notification_color"
-                app:cardCornerRadius="35dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:foregroundGravity="center"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/notification"
-                        tools:ignore="DuplicateIds" />
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="150dp"
-                        android:layout_height="27dp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginBottom="29dp"
-                        android:text="@string/notification_message"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/imageView" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
@@ -318,7 +279,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/navHomeImg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
@@ -326,7 +287,7 @@
                     app:srcCompat="@drawable/baseline_home_24" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/navTxtHome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -344,7 +305,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/navProfImg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
@@ -353,7 +314,7 @@
                     tools:ignore="DuplicateIds" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/navTxtProf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -371,7 +332,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/NavSettingImg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
@@ -380,7 +341,7 @@
                     tools:ignore="DuplicateIds" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/navTxtSettings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -398,7 +359,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/navNotifiImg"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
@@ -407,7 +368,7 @@
                     tools:ignore="DuplicateIds" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/navTxtNotifi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
