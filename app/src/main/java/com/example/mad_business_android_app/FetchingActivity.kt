@@ -4,20 +4,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.TextView
-import androidx.appcompat.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mad_business_android_app.adapters.UserAdapter
-import com.example.mad_business_android_app.databinding.ActivityUserMgtHomeBinding
+import com.example.mad_business_android_app.models.UserModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.*
 import kotlin.collections.ArrayList
 
 class FetchingActivity : AppCompatActivity() {
     private lateinit var userRecyclerView : RecyclerView
-//    private lateinit var tvLoadingData : TextView
+    //    private lateinit var tvLoadingData : TextView
     private lateinit var userList : ArrayList<UserModel>
     private lateinit var dbRef :  DatabaseReference
     private lateinit var userCreateBtn : Button
@@ -139,4 +137,3 @@ class FetchingActivity : AppCompatActivity() {
         })
     }
 }
-

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="signin_conner">16dp</dimen>
+    <dimen name="textview_padding">16dp</dimen>
+    <dimen name="large_text_size">36sp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="textview_height">25dp</dimen>
+    <dimen name="textview_width">150dp</dimen>
+    <dimen name="ball_radius">30dp</dimen>
+    <dimen name="font_size">16sp</dimen>
 </resources>

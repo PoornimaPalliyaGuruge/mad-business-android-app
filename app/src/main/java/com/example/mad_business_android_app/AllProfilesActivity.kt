@@ -3,12 +3,12 @@ package com.example.mad_business_android_app
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.mad_business_android_app.adapters.AllProfAdapter
 import com.example.mad_business_android_app.databinding.ActivityViewAllBinding
+import com.example.mad_business_android_app.models.UserModel
 import com.google.firebase.database.*
 import java.util.*
 import kotlin.collections.ArrayList

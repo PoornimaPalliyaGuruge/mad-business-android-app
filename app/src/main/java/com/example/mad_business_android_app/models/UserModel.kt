@@ -1,4 +1,4 @@
-package com.example.mad_business_android_app
+package com.example.mad_business_android_app.models
 
 data class UserModel (
     var userId : String? = null,

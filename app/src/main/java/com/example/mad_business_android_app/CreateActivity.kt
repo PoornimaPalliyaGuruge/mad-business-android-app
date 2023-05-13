@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mad_business_android_app.models.UserModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -105,7 +106,7 @@ class CreateActivity : AppCompatActivity() {
         dbRef.child(userId).setValue(user)
             .addOnCompleteListener{
                 Toast.makeText(this,"User created successfully", Toast.LENGTH_LONG).show()
-                val intent = Intent(this,FetchingActivity::class.java)
+                val intent = Intent(this, FetchingActivity::class.java)
                 startActivity(intent)
             }.addOnFailureListener { err ->
                 Toast.makeText(this,"Error ${err.message}",Toast.LENGTH_LONG).show()

@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mad_business_android_app.R
-import com.example.mad_business_android_app.UserModel
+import com.example.mad_business_android_app.models.UserModel
 
 class UserAdapter(private var userList: ArrayList<UserModel>) : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
 

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mad_business_android_app.R
-import com.example.mad_business_android_app.UserModel
+import com.example.mad_business_android_app.models.UserModel
 
 class AllProfAdapter(private val context: Context, private var dataList: List<UserModel>) : RecyclerView.Adapter<MyViewHolder>() {
 

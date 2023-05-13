@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid
-        android:color="@color/inventory"></solid>
-    <corners
-        android:radius="8dp"></corners>
+    <solid android:color="#009dff"/>
+    <corners android:radius="20dp"/>
 
 </shape>
