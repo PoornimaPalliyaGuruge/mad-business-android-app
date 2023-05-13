@@ -1,6 +1,9 @@
 <resources>
+
     <!--IT21146374 Sales Management , Sign up, Logging , Home-->
-    <string name="app_name">mad-business-android-app</string>
+    <string name="app_name">BIZPlANNER</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
     <string name="emailOrUN">Email or Username</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
@@ -134,6 +137,8 @@
     <string name="txt_average">Average Rating</string>
     <string name="txt_maximum">Maximum Rating</string>
     <string name="txt_minimum">Minimum Rating</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
