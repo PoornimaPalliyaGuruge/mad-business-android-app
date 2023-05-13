@@ -3,11 +3,9 @@ package com.example.mad_business_android_app.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.Toast
+import android.widget.*
 import com.example.mad_business_android_app.R
+import com.example.mad_business_android_app.databinding.HometabsBinding
 import com.example.mad_business_android_app.models.Expenses
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -39,6 +37,13 @@ class AddNewExpense : AppCompatActivity() {
         AddNew.setOnClickListener{
             saveExpenseData()
         }
+
+        //back button
+        val back = findViewById<ImageView>(R.id.backTo)
+        back.setOnClickListener{
+            val intent=Intent(this, ExpenseHome::class.java)
+        }
+        //get
     }
 
     private fun saveExpenseData() {

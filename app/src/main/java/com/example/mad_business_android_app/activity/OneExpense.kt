@@ -5,6 +5,7 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mad_business_android_app.R
+import com.example.mad_business_android_app.databinding.HometabsBinding
 import com.example.mad_business_android_app.models.Expenses
 import com.google.firebase.database.FirebaseDatabase
 
@@ -27,6 +28,13 @@ class OneExpense : AppCompatActivity() {
 
         initView()
         setValuesToViews()
+
+        //backbutton
+        val back = findViewById<ImageView>(R.id.backbtn2)
+        back.setOnClickListener{
+            val intent=Intent(this, ExpenseHome::class.java)
+        }
+
 
         //update
         eExpUpdate.setOnClickListener {

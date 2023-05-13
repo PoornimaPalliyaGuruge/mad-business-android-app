@@ -14,9 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Madbusinessandroidapp"
         tools:targetApi="31">
-        <activity
-            android:name=".ExpenseBarChart"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -59,6 +57,9 @@
             android:exported="false" />
         <activity
             android:name=".activity.OneExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExpenseBarChart"
             android:exported="false" />
 <!--        Inventory-->
         <activity android:name=".InventoryHome" android:exported="false"/>

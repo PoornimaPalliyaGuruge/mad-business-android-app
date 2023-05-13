@@ -6,12 +6,11 @@ import android.view.View
 import android.widget.*
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mad_business_android_app.ExpenseHistory
 import com.example.mad_business_android_app.adapters.ExpenseAdapter
 import com.example.mad_business_android_app.models.Expenses
 import com.google.firebase.database.*
 import com.example.mad_business_android_app.R
-import org.w3c.dom.Text
+import com.example.mad_business_android_app.databinding.HometabsBinding
 import java.util.*
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -39,15 +38,12 @@ class ExpenseHome : AppCompatActivity() {
             val intent = Intent(this, AddNewExpense::class.java)
             startActivity(intent)
         }
-
-
-        //Viewing History
-        val viewHistory = findViewById<ImageView>(R.id.history)
-        viewHistory.setOnClickListener {
-            val intent = Intent(this, ExpenseHistory::class.java)
-            startActivity(intent)
+        
+        //backbutton
+        val back = findViewById<ImageView>(R.id.backbtn)
+        back.setOnClickListener{
+            val intent=Intent(this,HometabsBinding::class.java)
         }
-
         //get the total spending
         totExpense = findViewById(R.id.totExpense)
 
@@ -71,7 +67,7 @@ class ExpenseHome : AppCompatActivity() {
         expList =  arrayListOf()
         filteredList = arrayListOf()
 
-        searchView = findViewById<SearchView>(R.id.searchExp)
+        searchView = findViewById<SearchView>(R.id.searchExp1)
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
                 return false
@@ -166,7 +162,7 @@ class ExpenseHome : AppCompatActivity() {
                     })
 
                     expRecyclerView.visibility= View.VISIBLE
-                    totExpense.text = "     $totalAmount"
+                    totExpense.text = "     Rs.$totalAmount"
                 }
             }
 

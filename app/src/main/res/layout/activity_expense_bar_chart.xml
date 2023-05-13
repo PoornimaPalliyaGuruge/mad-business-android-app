@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".activity.ExpenseBarChart">
 
-    <com.db.williamchart.view.BarChartView
+    <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/barChart"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_width="387dp"
+        android:layout_height="371dp"
+        android:layout_marginTop="212dp"
         android:layout_marginEnd="6dp"
-        app:barrierAllowsGoneWidgets="@+id/chartTitle"
+        android:background="#0003A9F4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
