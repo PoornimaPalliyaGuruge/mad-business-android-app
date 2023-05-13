@@ -136,6 +136,7 @@
     <string name="txt_maximum">Maximum Rating</string>
     <string name="txt_minimum">Minimum Rating</string>
     <string name="expense_id">Expense Id</string>
+    <string name="chart_Title">Expenses for Each Month</string>
     <string name="_125000_00">125000.00</string>
     <string name="edit_products">Edit_products</string>
     <string name="stock_in_hand_rs">Stock in hand (Rs.)</string>

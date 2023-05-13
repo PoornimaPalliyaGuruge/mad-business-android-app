@@ -17,13 +17,13 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".SignupActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -46,19 +46,21 @@
         <activity
             android:name=".FetchingSalesData"
             android:exported="false" />
-
-        <activity android:name=".ActSalesDetails"
-            android:exported="false"/>
-
-        <activity android:name=".activity.ExpenseHome"
-            android:exported="false"/>
-
-        <activity android:name=".activity.AddNewExpense"
-            android:exported="false"/>
-
-        <activity android:name=".activity.OneExpense"
-            android:exported="false"/>
-
+        <activity
+            android:name=".ActSalesDetails"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExpenseHome"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddNewExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OneExpense"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExpenseBarChart"
+            android:exported="false" />
 <!--        Inventory-->
         <activity android:name=".InventoryHome" android:exported="false"/>
 

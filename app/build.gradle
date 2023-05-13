@@ -59,6 +59,7 @@ dependencies {
     //charts
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
     implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'com.diogobernardino:williamchart:3.10.1'
 
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.3'
     implementation 'com.google.firebase:firebase-auth:21.0.3'
